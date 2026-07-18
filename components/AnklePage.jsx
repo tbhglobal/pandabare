@@ -56,12 +56,16 @@ export default function AnklePage() {
       {/* HERO */}
       <section ref={heroRef} style={{ position: "relative", background: DARK, color: "#fff", overflow: "hidden" }}>
         <motion.div style={{ position: "absolute", inset: "-9% 0", y: bgY }}>
-          <Image src="/images/ankle/hero.jpg" alt="Man on a park bench pulling on red PandaBare ankle socks" fill priority sizes="100vw"
-            style={{ objectFit: "cover", objectPosition: "68% 40%" }} />
-          <div style={{ position: "absolute", inset: 0, background: "linear-gradient(90deg, rgba(10,12,10,.95) 0%, rgba(10,12,10,.78) 34%, rgba(10,12,10,.12) 66%, rgba(10,12,10,.4) 100%)" }} />
+          <Image src="/images/hero-bamboo.jpg" alt="Woman reading in a bamboo forest wearing black PandaBare ankle socks" fill priority sizes="100vw"
+            style={{ objectFit: "cover", objectPosition: "center 42%" }} />
+          {/* text-side gradient */}
+          <div style={{ position: "absolute", inset: 0, background: "linear-gradient(90deg, rgba(5,7,5,.93) 0%, rgba(5,7,5,.72) 30%, rgba(5,7,5,.28) 52%, rgba(5,7,5,.02) 68%, rgba(5,7,5,.18) 100%)" }} />
+          {/* black vignette, all edges */}
+          <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse 120% 90% at 62% 45%, transparent 52%, rgba(0,0,0,.62) 100%)" }} />
+          <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(0,0,0,.42) 0%, transparent 16%, transparent 80%, rgba(0,0,0,.55) 100%)" }} />
         </motion.div>
 
-        <div className="wrap" style={{ position: "relative", zIndex: 2, minHeight: 620, display: "grid", gridTemplateColumns: "1.05fr .95fr", alignItems: "center" }} data-hero-grid>
+        <div className="wrap" style={{ position: "relative", zIndex: 2, minHeight: 620, display: "grid", gridTemplateColumns: "1fr", alignItems: "center" }} data-hero-grid>
           <div style={{ padding: "96px 0" }}>
             <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .7, ease: [0.22, 1, 0.36, 1] }}>
               <Eyebrow light>PandaBare Ankle Hugger bamboo socks</Eyebrow>
@@ -85,13 +89,7 @@ export default function AnklePage() {
               <span style={{ fontSize: 21, fontWeight: 700 }}>$15.95 <small style={{ fontSize: 11, fontWeight: 400, letterSpacing: ".12em" }}>AUD</small></span>
             </motion.div>
           </div>
-          <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .9, delay: .5, ease: [0.22, 1, 0.36, 1] }}
-            style={{ justifySelf: "end", alignSelf: "center", width: "min(300px,72%)", background: "rgba(16,19,16,.82)", border: "1px solid rgba(246,243,238,.14)", borderRadius: 6, padding: 18, backdropFilter: "blur(4px)" }}>
-            <div style={{ position: "relative", aspectRatio: "1", borderRadius: 4, overflow: "hidden", marginBottom: 12 }}>
-              <Image src="/images/ankle/red.jpg" alt="Red Panda ankle socks" fill sizes="300px" style={{ objectFit: "cover" }} />
-            </div>
-            <div style={{ fontFamily: "var(--font-serif), serif", fontStyle: "italic", fontSize: 17, color: "#9FC4A4", textAlign: "center" }}>Soft bamboo. Stronger you.</div>
-          </motion.div>
+          
         </div>
       </section>
 
