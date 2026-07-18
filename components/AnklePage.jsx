@@ -175,12 +175,7 @@ export default function AnklePage() {
                   </div>
                   <div style={{ padding: "16px 18px 20px", textAlign: "center" }}>
                     <b style={{ display: "block", fontSize: 13, letterSpacing: ".2em", textTransform: "uppercase" }}>{c.short}</b>
-                    <div style={{ display: "flex", justifyContent: "center", gap: 6, margin: "10px 0" }}>
-                      {colours.map((s) => (
-                        <span key={s.short} style={{ width: 12, height: 12, borderRadius: "50%", background: s.hex, border: s.short === c.short ? `2px solid ${SAGE}` : "1px solid rgba(26,26,26,.2)" }} />
-                      ))}
-                    </div>
-                    <div style={{ fontSize: 14, fontWeight: 700, marginBottom: 12 }}>$15.95 <small style={{ fontWeight: 400, fontSize: 10 }}>AUD</small></div>
+                    <div style={{ fontSize: 14, fontWeight: 700, margin: "10px 0 12px" }}>$15.95 <small style={{ fontWeight: 400, fontSize: 10 }}>AUD</small></div>
                     <button className="btn" onClick={() => { setAdded(i); setTimeout(() => setAdded(-1), 2000); }}
                       style={{ width: "100%", padding: "12px 0", fontSize: 12, background: added === i ? "var(--charcoal)" : SAGE, color: "#fff" }}>
                       {added === i ? "Added ✓" : "Add to cart"}
