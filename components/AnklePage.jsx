@@ -56,12 +56,12 @@ export default function AnklePage() {
       {/* HERO */}
       <section ref={heroRef} style={{ position: "relative", background: DARK, color: "#fff", overflow: "hidden" }}>
         <motion.div style={{ position: "absolute", inset: "-9% 0", y: bgY }}>
-          <Image src="/images/hero-bamboo.jpg" alt="Woman reading in a bamboo forest wearing black PandaBare ankle socks" fill priority sizes="100vw"
-            style={{ objectFit: "cover", objectPosition: "center 42%" }} />
+          <Image src="/images/ankle/hero-stairs.jpg" alt="Woman heading down the stairs in black PandaBare ankle socks, boots in hand" fill priority sizes="100vw"
+            style={{ objectFit: "cover", objectPosition: "center 58%" }} />
           {/* text-side gradient */}
           <div style={{ position: "absolute", inset: 0, background: "linear-gradient(90deg, rgba(5,7,5,.93) 0%, rgba(5,7,5,.72) 30%, rgba(5,7,5,.28) 52%, rgba(5,7,5,.02) 68%, rgba(5,7,5,.18) 100%)" }} />
           {/* black vignette, all edges */}
-          <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse 120% 90% at 62% 45%, transparent 52%, rgba(0,0,0,.62) 100%)" }} />
+          <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse 115% 95% at 64% 60%, transparent 50%, rgba(0,0,0,.65) 100%)" }} />
           <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(0,0,0,.42) 0%, transparent 16%, transparent 80%, rgba(0,0,0,.55) 100%)" }} />
         </motion.div>
 
