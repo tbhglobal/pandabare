@@ -37,7 +37,7 @@ export default function Hero() {
         </motion.div>
         <div style={{ position: "relative", minHeight: 560, overflow: "hidden" }}>
           <motion.div style={{ y: imgY, position: "absolute", inset: "-8% 0" }}>
-            <Image src="/images/hero-couple.jpg" alt="Couple relaxing on the couch in PandaBare bamboo socks" fill sizes="56vw" style={{ objectFit: "cover" }} priority />
+            <Image src="/images/hero-bamboo.jpg" alt="Woman reading on a bench in a bamboo forest wearing PandaBare socks" fill sizes="56vw" style={{ objectFit: "cover", objectPosition: "62% 45%" }} priority />
           </motion.div>
         </div>
       </div>
