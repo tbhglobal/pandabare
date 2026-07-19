@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
+import { useCart } from "@/lib/cart";
 
 export default function ProductDetail({ product }) {
   const [colour, setColour] = useState(product.colours[0]?.name);
@@ -10,7 +11,16 @@ export default function ProductDetail({ product }) {
   const [added, setAdded] = useState(false);
   const [open, setOpen] = useState(0);
 
-  const add = () => { setAdded(true); setTimeout(() => setAdded(false), 2200); };
+  const cart = useCart();
+  const add = () => {
+    if (product.cartId === null) { window.location.href = "/socks/"; return; }
+    if (cart) {
+      const colourSlugMap = { "Midnight Black": "black", "Red Panda": "red", "Royal Blue": "blue", "Snow White": "white", Black: "black", White: "white", Red: "red" };
+      const slug = colourSlugMap[colour] || "";
+      cart.add({ id: `${product.cartPrefix}-${slug}`, name: product.name, colour, qty, price: parseFloat(String(product.price).replace(/[^0-9.]/g, "")), img: mainImg });
+    }
+    setAdded(true); setTimeout(() => setAdded(false), 2200);
+  };
 
   return (
     <section style={{ padding: "72px 0", background: "var(--cream)" }}>
@@ -45,7 +55,7 @@ export default function ProductDetail({ product }) {
               <span style={{ width: 28, textAlign: "center", fontWeight: 500 }}>{qty}</span>
               <button onClick={() => setQty(qty + 1)} style={{ width: 40, height: "100%", border: "none", background: "none", fontSize: 17, cursor: "pointer" }}>+</button>
             </div>
-            <button className="btn btn-forest" style={{ flex: 1 }} onClick={add}>{added ? "Added to bag ✓" : "Add to bag"}</button>
+            <button className="btn btn-forest" style={{ flex: 1 }} onClick={add}>{added ? "Added to bag ✓" : (product.cartId === null ? "Pick your three pairs" : "Add to bag")}</button>
           </div>
 
           <div style={{ borderTop: "1px solid rgba(26,26,26,.12)" }}>

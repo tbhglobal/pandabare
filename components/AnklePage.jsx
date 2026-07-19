@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef, useState } from "react";
+import { useCart } from "@/lib/cart";
 import Reveal from "./Reveal";
 
 const CREAM = "#F6F3EE";
@@ -39,10 +40,10 @@ const moments = [
 ];
 
 const colours = [
-  { name: "Red Panda", short: "Red", img: "/images/ankle/red.jpg", hex: "#A63A2B" },
-  { name: "Snow White", short: "White", img: "/images/ankle/white.jpg", hex: "#F4F1EA" },
-  { name: "Royal Blue", short: "Blue", img: "/images/ankle/blue.jpg", hex: "#2B4C8C" },
-  { name: "Midnight Black", short: "Black", img: "/images/ankle/black.jpg", hex: "#1A1A1A" },
+  { name: "Red Panda", short: "Red", slug: "red", img: "/images/ankle/red.jpg", hex: "#A63A2B" },
+  { name: "Snow White", short: "White", slug: "white", img: "/images/ankle/white.jpg", hex: "#F4F1EA" },
+  { name: "Royal Blue", short: "Blue", slug: "blue", img: "/images/ankle/blue.jpg", hex: "#2B4C8C" },
+  { name: "Midnight Black", short: "Black", slug: "black", img: "/images/ankle/black.jpg", hex: "#1A1A1A" },
 ];
 
 export default function AnklePage() {
@@ -50,6 +51,20 @@ export default function AnklePage() {
   const { scrollYProgress } = useScroll({ target: heroRef, offset: ["start start", "end start"] });
   const bgY = useTransform(scrollYProgress, [0, 1], ["0%", "16%"]);
   const [added, setAdded] = useState(-1);
+  const [sizes, setSizes] = useState({});
+  const cart = useCart();
+  const sizeFor = (i) => sizes[i] || "Small";
+  const addToCart = (c, i) => {
+    if (cart) cart.add({
+      id: `ankle-${c.slug}-${sizeFor(i).toLowerCase()}`,
+      name: "Ankle Hugger",
+      colour: c.name,
+      size: sizeFor(i),
+      price: 15.95,
+      img: c.img,
+    });
+    setAdded(i); setTimeout(() => setAdded(-1), 1600);
+  };
 
   return (
     <div style={{ background: CREAM }}>
@@ -175,8 +190,18 @@ export default function AnklePage() {
                   </div>
                   <div style={{ padding: "16px 18px 20px", textAlign: "center" }}>
                     <b style={{ display: "block", fontSize: 13, letterSpacing: ".2em", textTransform: "uppercase" }}>{c.short}</b>
-                    <div style={{ fontSize: 14, fontWeight: 700, margin: "10px 0 12px" }}>$15.95 <small style={{ fontWeight: 400, fontSize: 10 }}>AUD</small></div>
-                    <button className="btn" onClick={() => { setAdded(i); setTimeout(() => setAdded(-1), 2000); }}
+                    <div style={{ display: "flex", justifyContent: "center", gap: 8, margin: "10px 0" }}>
+                      {["Small", "Large"].map((s) => (
+                        <button key={s} onClick={() => setSizes((p) => ({ ...p, [i]: s }))}
+                          style={{ padding: "6px 16px", fontSize: 11.5, letterSpacing: ".08em", textTransform: "uppercase", borderRadius: 4, cursor: "pointer",
+                            border: sizeFor(i) === s ? `1.5px solid ${SAGE}` : "1px solid rgba(26,26,26,.25)",
+                            background: sizeFor(i) === s ? "#EFF4EF" : "#fff", color: "var(--charcoal)", fontFamily: "inherit" }}>
+                          {s}
+                        </button>
+                      ))}
+                    </div>
+                    <div style={{ fontSize: 14, fontWeight: 700, marginBottom: 12 }}>$15.95 <small style={{ fontWeight: 400, fontSize: 10 }}>AUD</small></div>
+                    <button className="btn" onClick={() => addToCart(c, i)}
                       style={{ width: "100%", padding: "12px 0", fontSize: 12, background: added === i ? "var(--charcoal)" : SAGE, color: "#fff" }}>
                       {added === i ? "Added ✓" : "Add to cart"}
                     </button>
@@ -201,7 +226,7 @@ export default function AnklePage() {
                 Experience the natural difference of bamboo. Ankle Hugger socks that move with you, wherever the day takes you.
               </p>
               <div style={{ display: "flex", flexDirection: "column", gap: 16, marginBottom: 34 }}>
-                {[["Free shipping", "On orders over $80 Australia-wide"], ["30-day comfort guarantee", "Love them or send them back"], ["Plastic-free packaging", "Gift-ready kraft, no landfill fillers"]].map(([t, b]) => (
+                {[["$10 flat shipping", "Free on orders over $50 Australia-wide"], ["30-day comfort guarantee", "Love them or send them back"], ["Plastic-free packaging", "Gift-ready kraft, no landfill fillers"]].map(([t, b]) => (
                   <div key={t} style={{ display: "flex", gap: 14, alignItems: "center" }}>
                     <div style={{ width: 36, height: 36, borderRadius: "50%", border: "1px solid rgba(159,196,164,.5)", display: "grid", placeItems: "center", flex: "none" }}>
                       <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#9FC4A4" strokeWidth="1.7"><path d="M5 13l4 4L19 7" /></svg>

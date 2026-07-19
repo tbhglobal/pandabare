@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef, useState } from "react";
+import { useCart } from "@/lib/cart";
 import Reveal from "./Reveal";
 
 const CREAM = "#F6F3EE";
@@ -32,9 +33,9 @@ const fabricPoints = [
 ];
 
 const colours = [
-  { name: "Red", img: "/images/products/wristy-red.jpg" },
-  { name: "White", img: "/images/products/wristy-white.jpg" },
-  { name: "Black", img: "/images/products/wristy-black.jpg" },
+  { name: "Red", slug: "red", img: "/images/products/wristy-red.jpg" },
+  { name: "White", slug: "white", img: "/images/products/wristy-white.jpg" },
+  { name: "Black", slug: "black", img: "/images/products/wristy-black.jpg" },
 ];
 
 export default function WristyPage() {
@@ -43,6 +44,11 @@ export default function WristyPage() {
   const bgY = useTransform(scrollYProgress, [0, 1], ["0%", "18%"]);
   const bandY = useTransform(scrollYProgress, [0, 1], ["0%", "-14%"]);
   const [added, setAdded] = useState(-1);
+  const cart = useCart();
+  const addToCart = (c, i) => {
+    if (cart) cart.add({ id: `wristy-${c.slug}`, name: "Wristy Wristband", colour: c.name, price: 12.95, img: c.img });
+    setAdded(i); setTimeout(() => setAdded(-1), 1600);
+  };
 
   return (
     <div style={{ background: CREAM }}>
@@ -166,7 +172,7 @@ export default function WristyPage() {
                   </div>
                   <div style={{ padding: "16px 18px 20px", textAlign: "center" }}>
                     <b style={{ display: "block", fontSize: 13, letterSpacing: ".22em", textTransform: "uppercase", marginBottom: 12 }}>{c.name}</b>
-                    <button className="btn" onClick={() => { setAdded(i); setTimeout(() => setAdded(-1), 2000); }}
+                    <button className="btn" onClick={() => addToCart(c, i)}
                       style={{ width: "100%", padding: "12px 0", fontSize: 12, background: added === i ? SAGE : "var(--charcoal)", color: "#fff" }}>
                       {added === i ? "Added ✓" : "Add to cart"}
                     </button>
@@ -201,7 +207,7 @@ export default function WristyPage() {
               <span style={{ fontSize: 20, fontWeight: 700 }}>$12.95 <small style={{ fontSize: 11, fontWeight: 400 }}>AUD</small></span>
             </div>
             <div style={{ display: "flex", justifyContent: "center", gap: 36, flexWrap: "wrap", fontSize: 12, letterSpacing: ".14em", textTransform: "uppercase", color: "rgba(246,243,238,.6)" }}>
-              <span>Free shipping over $80</span>
+              <span>$10 flat shipping · free over $50</span>
               <span>30-day comfort guarantee</span>
               <span>Plastic-free packaging</span>
             </div>

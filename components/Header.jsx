@@ -1,12 +1,14 @@
 "use client";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { useCart } from "@/lib/cart";
 
 const links = ["Comfort Kit", "Socks", "Sleep & Travel", "Gift Packs", "Corporate", "About"];
 const hrefs = ["/comfort-kit/", "/socks/", "/sleep-travel/", "/gift-packs/", "/corporate/", "/about/"];
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
+  const cart = useCart();
   useEffect(() => {
     const on = () => setScrolled(window.scrollY > 40);
     window.addEventListener("scroll", on, { passive: true });
@@ -25,7 +27,7 @@ export default function Header() {
         <nav style={{ display: "flex", gap: 30, fontSize: 13.5, fontWeight: 500 }} className="desktop-nav">
           {links.map((l, i) => <a key={l} href={hrefs[i]} style={{ padding: "4px 0" }}>{l}</a>)}
         </nav>
-        <a href="#" style={{ fontSize: 13.5, fontWeight: 500 }}>Cart (0)</a>
+        <button onClick={() => cart && cart.setOpen(true)} style={{ fontSize: 13.5, fontWeight: 500, background: "none", border: "none", cursor: "pointer", fontFamily: "inherit", color: "inherit" }}>Cart ({cart ? cart.count : 0})</button>
       </div>
     </header>
   );
