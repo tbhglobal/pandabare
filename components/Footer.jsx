@@ -1,9 +1,9 @@
 import Image from "next/image";
 
 const cols = [
-  { h: "Shop", links: [["Comfort Kit","/comfort-kit/"],["Socks","/socks/"],["Sleep & Travel","/sleep-travel/"],["Gift Packs","/gift-packs/"],["Corporate","/corporate/"]] },
+  { h: "Shop", links: [["Ankle Socks","/products/ankle-hugger/"],["Crew Socks","/products/crew-sock/"],["Wristies","/products/wristy/"],["Sock Bundle","/products/sock-bundle/"],["All Socks","/socks/"]] },
   { h: "Help", links: [["Shipping","/about/"],["Returns","/about/"],["FAQs","/about/"],["Care Guide","/about/"],["Contact Us","mailto:hello@pandabare.me"]] },
-  { h: "About", links: [["Our Story","/about/"],["Why Bamboo","/about/"],["Sustainability","/about/"],["Corporate","/corporate/"]] },
+  { h: "About", links: [["Our Story","/about/"],["Why Bamboo","/about/"],["Guides & Journal","/guides/"],["Sustainability","/about/"],["Corporate","/corporate/"]] },
 ];
 
 export default function Footer() {

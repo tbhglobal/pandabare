@@ -1,5 +1,5 @@
 export default function Announce() {
-  const items = ["$10 flat shipping · Free over $50", "30-day comfort guarantee", "Bamboo comfort. Lower impact."];
+  const items = ["Free shipping on orders $50+", "30-day comfort guarantee", "Bamboo comfort. Lower impact."];
   return (
     <div style={{ background: "var(--forest)", color: "rgba(246,243,238,.92)", fontSize: 12 }}>
       <div className="wrap" style={{ display: "flex", justifyContent: "space-between", gap: 24, padding: "9px 36px" }}>
