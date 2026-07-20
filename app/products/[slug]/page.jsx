@@ -7,7 +7,7 @@ import ProductCard from "@/components/ProductCard";
 import { products } from "@/lib/products";
 
 export function generateStaticParams() {
-  return Object.keys(products).filter((s) => s !== "wristy" && s !== "ankle-hugger").map((slug) => ({ slug }));
+  return Object.keys(products).filter((s) => s !== "wristy" && s !== "ankle-hugger" && s !== "crew-sock").map((slug) => ({ slug }));
 }
 
 export function generateMetadata({ params }) {
