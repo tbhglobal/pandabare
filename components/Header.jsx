@@ -3,8 +3,8 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useCart } from "@/lib/cart";
 
-const links = ["Ankle Socks", "Crew Socks", "Wristies", "About"];
-const hrefs = ["/products/ankle-hugger/", "/products/crew-sock/", "/products/wristy/", "/about/"];
+const links = ["Ankle Socks", "Crew Socks", "Wristies", "Guides", "About"];
+const hrefs = ["/products/ankle-hugger/", "/products/crew-sock/", "/products/wristy/", "/guides/", "/about/"];
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
