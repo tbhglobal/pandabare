@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import Reveal from "./Reveal";
 
 const items = [
-  { href: "/products/ankle-hugger/", name: "Ankle Socks", desc: "Low cut. High performance. Designed to move with you.", cta: "Shop ankle socks", img: "/images/products/card-ankle.jpg" },
-  { href: "/products/crew-sock/", name: "Crew Socks", desc: "Classic fit. All-day comfort. Made for training and everything in between.", cta: "Shop crew socks", img: "/images/products/card-crew.jpg" },
-  { href: "/products/wristy/", name: "Wristies", desc: "Absorb sweat. Stay focused. Performance you can feel.", cta: "Shop wristies", img: "/images/products/card-wristy.jpg" },
+  { href: "/products/ankle-hugger/", name: "Ankle Socks", desc: "Low cut. High performance. Designed to move with you.", cta: "Shop ankle socks", price: "$15.95", img: "/images/products/card-ankle.jpg" },
+  { href: "/products/crew-sock/", name: "Crew Socks", desc: "Classic fit. All-day comfort. Made for training and everything in between.", cta: "Shop crew socks", price: "$17.95", img: "/images/products/card-crew.jpg" },
+  { href: "/products/wristy/", name: "Wristies", desc: "Absorb sweat. Stay focused. Performance you can feel.", cta: "Shop wristies", price: "$12.95", img: "/images/products/card-wristy.jpg" },
 ];
 
 export default function Collection() {
@@ -30,7 +30,8 @@ export default function Collection() {
                     <Image src={p.img} alt={p.name} fill sizes="(max-width:1000px) 100vw, 33vw" style={{ objectFit: "cover" }} />
                   </motion.div>
                 </motion.div>
-                <h3 style={{ fontFamily: "var(--font-serif), serif", fontWeight: 600, fontSize: 21, textTransform: "uppercase", letterSpacing: ".02em", textAlign: "center", marginBottom: 10 }}>{p.name}</h3>
+                <h3 style={{ fontFamily: "var(--font-serif), serif", fontWeight: 600, fontSize: 21, textTransform: "uppercase", letterSpacing: ".02em", textAlign: "center", marginBottom: 4 }}>{p.name}</h3>
+                <p style={{ fontSize: 15, fontWeight: 700, textAlign: "center", marginBottom: 10 }}>{p.price}</p>
                 <p style={{ fontSize: 14, color: "var(--ink-soft)", textAlign: "center", maxWidth: "30ch", margin: "0 auto 20px" }}>{p.desc}</p>
                 <span className="btn btn-line" style={{ display: "flex", width: "100%" }}>{p.cta}</span>
               </motion.a>

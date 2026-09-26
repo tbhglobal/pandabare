@@ -4,6 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef, useState } from "react";
 import { useCart } from "@/lib/cart";
 import Reveal from "./Reveal";
+import ProductSchema from "./ProductSchema";
 
 const CREAM = "#F6F3EE";
 const DARK = "#101310";
@@ -20,7 +21,7 @@ const strip = [
   ["M12 21c-5-4-8-7.5-8-11a8 8 0 0116 0c0 3.5-3 7-8 11z", "Ultra soft", "Silky feel against your skin."],
   ["M3 8c3-2 6-2 9 0s6 2 9 0M3 13c3-2 6-2 9 0s6 2 9 0M3 18c3-2 6-2 9 0s6 2 9 0", "Breathable", "Keeps your feet fresh all day."],
   ["M12 3c3 4 6 7.2 6 10.2A6 6 0 016 13.2C6 10.2 9 7 12 3z", "Moisture wicking", "Pulls sweat away, stays dry."],
-  ["M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6l7-3z", "Odour resistant", "Fights odour-causing bacteria."],
+  ["M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6l7-3z", "Odour resistant", "Naturally helps you stay fresh."],
   ["M5 13l4 4L19 7", "Everyday comfort", "The perfect fit for every step."],
 ];
 
@@ -68,6 +69,7 @@ export default function AnklePage() {
 
   return (
     <div style={{ background: CREAM }}>
+      <ProductSchema name="PandaBare Ankle Hugger Bamboo Socks" description="Low-cut bamboo ankle socks. Soft, breathable and made to move with you." price="15.95" image="/images/products/card-ankle.jpg" path="/products/ankle-hugger/" />
       {/* HERO */}
       <section ref={heroRef} style={{ position: "relative", background: DARK, color: "#fff", overflow: "hidden" }}>
         <motion.div style={{ position: "absolute", inset: "-9% 0", y: bgY }}>

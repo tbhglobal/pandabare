@@ -4,6 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef, useState } from "react";
 import { useCart } from "@/lib/cart";
 import Reveal from "./Reveal";
+import ProductSchema from "./ProductSchema";
 
 const CREAM = "#F6F3EE";
 const DARK = "#101310";
@@ -27,7 +28,7 @@ const heroIcons = [
 const fabricPoints = [
   ["Ultra soft", "Silky smooth feel that is gentle on your skin."],
   ["Moisture wicking", "Pulls sweat away from your skin so you stay dry and focused."],
-  ["Fights odour", "Naturally resists odour-causing bacteria for long-lasting freshness."],
+  ["Stays fresh", "Breathable bamboo fibre that helps you feel fresh for longer."],
   ["Breathable & lightweight", "Promotes airflow and keeps you cool under pressure."],
   ["Eco friendly", "Lower impact from soil to skin."],
 ];
@@ -52,6 +53,7 @@ export default function WristyPage() {
 
   return (
     <div style={{ background: CREAM }}>
+      <ProductSchema name="PandaBare Wristy Bamboo Wristband" description="Soft, breathable bamboo wristband for the gym, training, yoga and everyday wear. One size." price="12.95" image="/images/products/card-wristy.jpg" path="/products/wristy/" />
       {/* HERO */}
       <section ref={heroRef} style={{ position: "relative", background: DARK, color: "#fff", overflow: "hidden" }}>
         <motion.div style={{ position: "absolute", inset: "-10% 0", y: bgY }}>
@@ -104,10 +106,10 @@ export default function WristyPage() {
               <Eyebrow>Why bamboo?</Eyebrow>
               <BigTitle>Nature&apos;s performance fabric.</BigTitle>
               <p style={{ color: "var(--ink-soft)", maxWidth: "44ch", margin: "22px 0 40px" }}>
-                Bamboo grows fast, uses far less water than cotton and needs no pesticides. The result? A high-performance fibre that is better for you and better for the planet.
+                Bamboo grows fast, uses less water than cotton and needs no pesticides. The result? A high-performance fibre that is better for you and better for the planet.
               </p>
               <div style={{ display: "flex", gap: 44 }}>
-                {[["Softer", "than cotton on skin"], ["-62%", "water vs. cotton"], ["100%", "biodegradable fibre"]].map(([b, s]) => (
+                {[["30-day", "comfort guarantee"], ["One size", "fits most wrists"], ["$12.95", "free shipping over $50"]].map(([b, s]) => (
                   <div key={b}>
                     <div style={{ fontWeight: 800, fontSize: 30, letterSpacing: "-0.01em" }}>{b}</div>
                     <div style={{ fontSize: 12.5, color: "var(--ink-soft)", maxWidth: "12ch" }}>{s}</div>
@@ -171,7 +173,8 @@ export default function WristyPage() {
                     <Image src={c.img} alt={`PandaBare Wristy in ${c.name}`} fill sizes="(max-width:1000px) 50vw, 25vw" style={{ objectFit: "cover" }} />
                   </div>
                   <div style={{ padding: "16px 18px 20px", textAlign: "center" }}>
-                    <b style={{ display: "block", fontSize: 13, letterSpacing: ".22em", textTransform: "uppercase", marginBottom: 12 }}>{c.name}</b>
+                    <b style={{ display: "block", fontSize: 13, letterSpacing: ".22em", textTransform: "uppercase", marginBottom: 4 }}>{c.name}</b>
+                    <span style={{ display: "block", fontSize: 14, fontWeight: 700, marginBottom: 12 }}>$12.95</span>
                     <button className="btn" onClick={() => addToCart(c, i)}
                       style={{ width: "100%", padding: "12px 0", fontSize: 12, background: added === i ? SAGE : "var(--charcoal)", color: "#fff" }}>
                       {added === i ? "Added ✓" : "Add to cart"}

@@ -4,6 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef, useState } from "react";
 import { useCart } from "@/lib/cart";
 import Reveal from "./Reveal";
+import ProductSchema from "./ProductSchema";
 
 const CREAM = "#F6F3EE";
 const DARK = "#101310";
@@ -42,6 +43,7 @@ export default function CrewPage() {
 
   return (
     <div style={{ background: CREAM }}>
+      <ProductSchema name="PandaBare Bamboo Crew Socks" description="Classic-fit bamboo crew socks. Soft, breathable, all-day comfort. One size fits most." price="17.95" image="/images/products/card-crew.jpg" path="/products/crew-sock/" />
       {/* HERO */}
       <section ref={heroRef} style={{ position: "relative", background: DARK, color: "#fff", overflow: "hidden" }}>
         <motion.div style={{ position: "absolute", inset: "-9% 0", y: bgY }}>

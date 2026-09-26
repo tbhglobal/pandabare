@@ -1,8 +1,8 @@
 import Image from "next/image";
 
 const cols = [
-  { h: "Shop", links: [["Ankle Socks","/products/ankle-hugger/"],["Crew Socks","/products/crew-sock/"],["Wristies","/products/wristy/"],["Sock Bundle","/products/sock-bundle/"],["All Socks","/socks/"]] },
-  { h: "Help", links: [["Shipping","/about/"],["Returns","/about/"],["FAQs","/about/"],["Care Guide","/about/"],["Contact Us","mailto:hello@pandabare.me"]] },
+  { h: "Shop", links: [["Ankle Socks","/products/ankle-hugger/"],["Crew Socks","/products/crew-sock/"],["Wristies","/products/wristy/"],["All Socks","/socks/"]] },
+  { h: "Help", links: [["Shipping","/help/#shipping"],["Returns","/help/#returns"],["FAQs","/help/#faq"],["Care Guide","/help/#care"],["Contact Us","mailto:orders@pandabare.me"]] },
   { h: "About", links: [["Our Story","/about/"],["Why Bamboo","/about/"],["Guides & Journal","/guides/"],["Sustainability","/about/"],["Corporate","/corporate/"]] },
 ];
 
@@ -14,7 +14,7 @@ export default function Footer() {
           <div>
             <Image src="/images/logo-horizontal.png" alt="PandaBare" width={145} height={40} style={{ height: 34, width: "auto", marginBottom: 16 }} />
             <p style={{ fontSize: 13.5, color: "var(--ink-soft)", maxWidth: "26ch" }}>
-              Bamboo comfort essentials for slower living, better sleep, travel and gifting.
+              Soft bamboo socks and wristbands, made for everyday comfort.
             </p>
           </div>
           {cols.map((c) => (
