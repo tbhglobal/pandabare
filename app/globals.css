@@ -27,6 +27,7 @@ button{font-family:inherit}
 
 @media (max-width: 1000px){
   .desktop-nav{display:none !important}
+  .mobile-menu-btn{display:inline-flex !important}
   [data-hero-grid]{grid-template-columns:1fr !important}
   [data-kit-grid]{grid-template-columns:1fr 1fr !important;gap:36px !important}
   [data-kit-grid] > div{border-left:none !important;padding:0 !important}

@@ -7,9 +7,20 @@ import GoogleAnalytics from "@/components/GoogleAnalytics";
 const GA_MEASUREMENT_ID = "G-D7DQQG3TQL";
 
 export const metadata = {
-  title: "PandaBare — Soft essentials for slower living",
-  description: "The PandaBare Comfort Kit brings together bamboo socks, a soft sleep mask and travel-ready essentials for everyday comfort, rest and gifting.",
+  metadataBase: new URL("https://pandabare.me"),
+  title: "PandaBare | Bamboo Socks & Wristbands, Made for Comfort",
+  description: "Soft, breathable bamboo ankle socks, crew socks and wristbands. Free shipping on Australian orders over $50 and a 30-day comfort guarantee.",
   icons: { icon: "/images/logo-icon.png" },
+  openGraph: {
+    title: "PandaBare | Bamboo Socks & Wristbands",
+    description: "Soft, breathable bamboo socks and wristbands. Free shipping over $50.",
+    url: "https://pandabare.me",
+    siteName: "PandaBare",
+    locale: "en_AU",
+    type: "website",
+    images: ["/images/hero-couple-bed.jpg"],
+  },
+  twitter: { card: "summary_large_image", images: ["/images/hero-couple-bed.jpg"] },
 };
 
 export default function RootLayout({ children }) {

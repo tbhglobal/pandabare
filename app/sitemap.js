@@ -9,8 +9,8 @@ const staticRoutes = [
   "products/ankle-hugger",
   "products/crew-sock",
   "products/wristy",
-  "products/sock-bundle",
   "about",
+  "help",
   "guides",
 ];
 
