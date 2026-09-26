@@ -5,18 +5,23 @@ import PageHero from "@/components/PageHero";
 import ProductDetail from "@/components/ProductDetail";
 import ProductCard from "@/components/ProductCard";
 import { products } from "@/lib/products";
+import { notFound } from "next/navigation";
 
 export function generateStaticParams() {
   return Object.keys(products).filter((s) => s !== "wristy" && s !== "ankle-hugger" && s !== "crew-sock").map((slug) => ({ slug }));
 }
 
+export const dynamicParams = false;
+
 export function generateMetadata({ params }) {
   const p = products[params.slug];
+  if (!p) return { title: "Not found | PandaBare" };
   return { title: `${p.name} | PandaBare` };
 }
 
 export default function ProductPage({ params }) {
   const p = products[params.slug];
+  if (!p) notFound();
   const others = Object.entries(products).filter(([s]) => s !== params.slug).slice(0, 3);
   return (
     <>
