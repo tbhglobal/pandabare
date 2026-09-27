@@ -28,6 +28,7 @@ const SHOP_HEADING = {
   D: "Pack a pair for the trip",
   E: "Gifts that actually get worn",
   F: "Try PandaBare",
+  G: "Kit for your next session",
 };
 
 const PRODUCTS = [
@@ -40,7 +41,8 @@ export default function GuidePage({ params }) {
   const g = getGuide(params.slug);
   if (!g) return notFound();
   const related = getAllGuides().filter((x) => x.cluster === g.cluster && x.slug !== g.slug).slice(0, 3);
-  const products = g.cluster === "C" || g.cluster === "D" ? [PRODUCTS[1], PRODUCTS[0], PRODUCTS[2]] : PRODUCTS;
+  const products = g.cluster === "C" || g.cluster === "D" ? [PRODUCTS[1], PRODUCTS[0], PRODUCTS[2]]
+    : g.cluster === "G" ? [PRODUCTS[2], PRODUCTS[0], PRODUCTS[1]] : PRODUCTS;
 
   return (
     <>
