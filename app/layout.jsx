@@ -1,4 +1,5 @@
 import "./globals.css";
+import { pageMetadata, SITE, jsonLd } from "@/lib/seo.mjs";
 import { CartProvider } from "@/lib/cart";
 import CartDrawer from "@/components/CartDrawer";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
@@ -7,20 +8,10 @@ import GoogleAnalytics from "@/components/GoogleAnalytics";
 const GA_MEASUREMENT_ID = "G-D7DQQG3TQL";
 
 export const metadata = {
-  metadataBase: new URL("https://pandabare.me"),
-  title: "PandaBare | Bamboo Socks & Wristbands, Made for Comfort",
-  description: "Soft, breathable bamboo ankle socks, crew socks and wristbands. Free shipping on Australian orders over $50 and a 30-day comfort guarantee.",
+  ...pageMetadata({title:"Bamboo Socks & Wristbands Australia | PandaBare",description:"Shop PandaBare ankle socks, crew socks and Wristy wristbands. Choose your colour and fit. A$10 Australian delivery, free on orders of A$50 or more."}),
+  alternates: undefined,
+  metadataBase: new URL(SITE),
   icons: { icon: "/images/logo-icon.png" },
-  openGraph: {
-    title: "PandaBare | Bamboo Socks & Wristbands",
-    description: "Soft, breathable bamboo socks and wristbands. Free shipping over $50.",
-    url: "https://pandabare.me",
-    siteName: "PandaBare",
-    locale: "en_AU",
-    type: "website",
-    images: ["/images/hero-couple-bed.jpg"],
-  },
-  twitter: { card: "summary_large_image", images: ["/images/hero-couple-bed.jpg"] },
 };
 
 export default function RootLayout({ children }) {
@@ -31,7 +22,7 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" />
       </head>
-      <body><CartProvider>{children}<CartDrawer /></CartProvider><GoogleAnalytics gaId={GA_MEASUREMENT_ID} /></body>
+      <body><script type="application/ld+json" dangerouslySetInnerHTML={{__html:jsonLd({'@context':'https://schema.org','@graph':[{'@type':'Organization','@id':SITE+'/#organization',name:'PandaBare',url:SITE+'/',logo:SITE+'/images/logo-horizontal.png'},{'@type':'WebSite','@id':SITE+'/#website',name:'PandaBare',url:SITE+'/',publisher:{'@id':SITE+'/#organization'}}]})}}/><CartProvider>{children}<CartDrawer /></CartProvider><GoogleAnalytics gaId={GA_MEASUREMENT_ID} /></body>
     </html>
   );
 }
