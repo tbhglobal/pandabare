@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import PageHero from "@/components/PageHero";
 import KitBreakdown from "@/components/KitBreakdown";
 
-export const metadata = { title: "The Comfort Kit | PandaBare" };
+export const metadata = { title: "The Comfort Kit | PandaBare", alternates:{canonical:"https://pandabare.me/comfort-kit/"}, robots:{index:false,follow:true} };
 
 export default function ComfortKitPage() {
   return (
