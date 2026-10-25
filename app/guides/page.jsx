@@ -1,13 +1,11 @@
+import { pageMetadata } from "@/lib/seo.mjs";
 import Announce from "@/components/Announce";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import { getGuidesByCluster } from "@/lib/guides";
 
-export const metadata = {
-  title: "Guides & Journal | PandaBare",
-  description: "Practical guides on bamboo socks, feet, sleep, travel and thoughtful gifting from PandaBare. Honest, useful and Australian.",
-};
+export const metadata=pageMetadata({title:'Sock Fit, Care & Wristband Guides | PandaBare',description:'Browse PandaBare guides on sock fit, care, ankle versus crew cuts and wristbands. Explore the current product collection.',path:"/guides/"});
 
 export default function GuidesIndex() {
   const groups = getGuidesByCluster();
@@ -23,7 +21,7 @@ export default function GuidesIndex() {
           <div className="wrap">
             <span className="eyebrow" style={{ color: "var(--beige)" }}>The PandaBare journal</span>
             <h1 style={{ fontFamily: "var(--font-serif), serif", fontWeight: 700, fontSize: "clamp(34px,4.4vw,56px)", textTransform: "uppercase", letterSpacing: "-0.01em", lineHeight: 1.05, margin: "14px 0 16px" }}>
-              Guides worth reading.
+              Sock fit, care &amp; wristband guides.
             </h1>
             <p style={{ color: "rgba(246,243,238,.78)", fontWeight: 300, maxWidth: "56ch", fontSize: 16.5 }}>
               Straight-talking guides on bamboo, socks, feet, sleep, travel and gifting. No fluff, just what actually helps.
