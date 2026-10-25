@@ -1,5 +1,6 @@
 import Stripe from "stripe";
 import { NextResponse } from "next/server";
+import { isSoldOut, SOLD_OUT_MESSAGE, SOLD_OUT_VARIANT } from "@/lib/availability.mjs";
 
 const FREE_THRESHOLD_CENTS = 5000;
 const SHIPPING_CENTS = 1000;
@@ -47,11 +48,15 @@ async function loadPrices(stripe) {
 
 export async function POST(req) {
   try {
-    const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
     const { items } = await req.json();
     if (!Array.isArray(items) || items.length === 0 || items.length > 50) {
       return NextResponse.json({ error: "Cart is empty" }, { status: 400 });
     }
+    // Reject the whole cart before any provider lookup or session creation.
+    if (items.some((item) => isSoldOut(item?.id))) {
+      return NextResponse.json({ error: SOLD_OUT_MESSAGE, unavailable_items: [SOLD_OUT_VARIANT] }, { status: 409 });
+    }
+    const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
     const prices = await loadPrices(stripe);
     const line_items = [];
     for (const it of items) {

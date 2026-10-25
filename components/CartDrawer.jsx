@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import { isSoldOut, SOLD_OUT_MESSAGE } from "@/lib/availability.mjs";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { useCart, FREE_SHIPPING_THRESHOLD, SHIPPING_FEE } from "@/lib/cart";
@@ -63,11 +64,13 @@ export default function CartDrawer() {
     };
     remove(id);
   };
+  const hasSoldOutItem = items.some((item) => isSoldOut(item.id));
   const free = subtotal >= FREE_SHIPPING_THRESHOLD;
   const shipping = items.length === 0 ? 0 : free ? 0 : SHIPPING_FEE;
   const toGo = (FREE_SHIPPING_THRESHOLD - subtotal).toFixed(2);
 
   const checkout = async () => {
+    if (hasSoldOutItem) { setError(SOLD_OUT_MESSAGE); return; }
     if (started.current) return;
     started.current = true;
     setBusy(true); setError("");
@@ -103,6 +106,7 @@ export default function CartDrawer() {
             </div>
 
             <div style={{ flex: 1, overflowY: "auto", padding: "8px 24px" }}>
+              {hasSoldOutItem && <p role="alert" style={{ color: "#A63A2B", padding: "16px 0", fontSize: 13 }}>{SOLD_OUT_MESSAGE}</p>}
               {items.length === 0 && <p style={{ color: "var(--ink-soft)", padding: "32px 0", textAlign: "center" }}>Your cart is empty.</p>}
               {items.map((i) => (
                 <div key={i.id} style={{ display: "flex", gap: 14, padding: "16px 0", borderBottom: "1px solid rgba(26,26,26,.08)" }}>
@@ -114,11 +118,12 @@ export default function CartDrawer() {
                   <div style={{ flex: 1 }}>
                     <b style={{ display: "block", fontSize: 13.5, fontWeight: 600 }}>{i.name}</b>
                     <span style={{ fontSize: 12, color: "var(--ink-soft)" }}>{[i.colour, i.size].filter(Boolean).join(" · ")}</span>
+                    {isSoldOut(i.id) && <strong style={{ display: "block", fontSize: 12, color: "#A63A2B" }}>Sold out — remove to checkout</strong>}
                     <div style={{ display: "flex", alignItems: "center", gap: 10, marginTop: 8 }}>
                       <div style={{ display: "flex", alignItems: "center", border: "1px solid rgba(26,26,26,.2)", borderRadius: 4 }}>
                         <button aria-label={`Decrease ${i.name} ${i.colour} ${i.size || ""} quantity`} onClick={() => i.qty === 1 ? removeItem(i.id) : setQty(i.id, i.qty - 1)} style={{ width: 44, height: 44, border: "none", background: "none", cursor: "pointer" }}>−</button>
                         <span style={{ width: 22, textAlign: "center", fontSize: 13 }}>{i.qty}</span>
-                        <button disabled={i.qty >= 50} aria-label={`Increase ${i.name} ${i.colour} ${i.size || ""} quantity`} onClick={() => setQty(i.id, i.qty + 1)} style={{ width: 44, height: 44, border: "none", background: "none", cursor: "pointer" }}>+</button>
+                        <button disabled={i.qty >= 50 || isSoldOut(i.id)} aria-label={`Increase ${i.name} ${i.colour} ${i.size || ""} quantity`} onClick={() => setQty(i.id, i.qty + 1)} style={{ width: 44, height: 44, border: "none", background: "none", cursor: "pointer" }}>+</button>
                       </div>
                       <button ref={(node) => { if (node) rowButtons.current.set(i.id, node); else rowButtons.current.delete(i.id); }} onClick={() => removeItem(i.id)} style={{ background: "none", border: "none", fontSize: 12, color: "var(--ink-soft)", cursor: "pointer", textDecoration: "underline" }}>Remove</button>
                     </div>
@@ -145,8 +150,8 @@ export default function CartDrawer() {
                   <span>Total</span><span>${(subtotal + shipping).toFixed(2)} AUD</span>
                 </div>
                 {error && <div role="alert" style={{ fontSize: 12.5, color: "#A63A2B", marginBottom: 10 }}>{error}</div>}
-                <button className="btn btn-forest" style={{ width: "100%" }} onClick={checkout} disabled={busy}>
-                  {busy ? "Heading to checkout…" : "Checkout"}
+                <button className="btn btn-forest" style={{ width: "100%" }} onClick={checkout} disabled={busy || hasSoldOutItem}>
+                  {hasSoldOutItem ? "Remove sold-out item" : busy ? "Heading to checkout…" : "Checkout"}
                 </button>
               </div>
             )}
