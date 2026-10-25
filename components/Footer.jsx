@@ -24,12 +24,8 @@ export default function Footer() {
             </div>
           ))}
           <div>
-            <h4 style={{ fontSize: 11, fontWeight: 700, letterSpacing: ".24em", textTransform: "uppercase", color: "var(--ink-soft)", marginBottom: 16 }}>Stay in the loop</h4>
-            <p style={{ fontSize: 13.5, color: "var(--ink-soft)", marginBottom: 16, maxWidth: "30ch" }}>Get comfort notes, product drops and 10% off your first order.</p>
-            <form style={{ display: "flex" }}>
-              <input type="email" placeholder="Enter your email" style={{ flex: 1, padding: "13px 16px", border: "1px solid rgba(26,26,26,.25)", borderRight: "none", borderRadius: "4px 0 0 4px", background: "var(--cream)", fontFamily: "inherit", fontSize: 13.5, outline: "none" }} />
-              <button type="button" aria-label="Sign up" style={{ width: 48, border: "none", borderRadius: "0 4px 4px 0", background: "var(--forest)", color: "var(--cream)", fontSize: 17, cursor: "pointer" }}>→</button>
-            </form>
+            <h4 style={{ fontSize: 11, fontWeight: 700, letterSpacing: ".24em", textTransform: "uppercase", marginBottom: 16 }}>Need a hand?</h4>
+            <p style={{ fontSize: 13.5 }}>For product and order enquiries, <a href="mailto:orders@pandabare.me" style={{ textDecoration: "underline" }}>email orders@pandabare.me</a>.</p>
           </div>
         </div>
         <div style={{ borderTop: "1px solid rgba(26,26,26,.1)", paddingTop: 26, display: "flex", justifyContent: "space-between", fontSize: 12, color: "var(--ink-soft)" }}>

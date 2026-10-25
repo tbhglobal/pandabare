@@ -42,7 +42,7 @@ export default function Header() {
         <nav style={{ display: "flex", gap: 30, fontSize: 13.5, fontWeight: 500 }} className="desktop-nav">
           {links.map((l, i) => <a key={l} href={hrefs[i]} style={{ padding: "4px 0" }}>{l}</a>)}
         </nav>
-        <button onClick={() => cart && cart.setOpen(true)} style={{ fontSize: 13.5, fontWeight: 500, background: "none", border: "none", cursor: "pointer", fontFamily: "inherit", color: "inherit" }}>Cart ({cart ? cart.count : 0})</button>
+        <button aria-haspopup="dialog" aria-controls="cart-dialog" aria-label={`Open cart, ${cart ? cart.count : 0} items`} onClick={() => { setMenuOpen(false); cart && cart.setOpen(true); }} style={{ fontSize: 13.5, fontWeight: 500, background: "none", border: "none", cursor: "pointer", fontFamily: "inherit", color: "inherit" }}>Cart ({cart ? cart.count : 0})</button>
       </div>
 
       {menuOpen && (
