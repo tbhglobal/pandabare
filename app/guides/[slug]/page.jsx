@@ -1,3 +1,5 @@
+import { pageMetadata, articleData, jsonLd } from "@/lib/seo.mjs";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Announce from "@/components/Announce";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -14,9 +16,9 @@ export function generateMetadata({ params }) {
   if (!g) return { title: "Guide | PandaBare" };
   const image = g.hero ? g.hero.src : "/images/hero-couple-bed.jpg";
   return {
-    title: `${g.metaTitle} | PandaBare`,
+    ...pageMetadata({title:`${g.metaTitle} | PandaBare`,description:g.description,path:`/guides/${g.slug}/`,image}),
     description: g.description,
-    openGraph: { title: g.metaTitle, description: g.description, images: [image], type: "article" },
+    openGraph: { url: `https://pandabare.me/guides/${g.slug}/`, title: g.metaTitle, description: g.description, images: [image], type: "article" },
     twitter: { card: "summary_large_image", title: g.metaTitle, description: g.description, images: [image] },
   };
 }
@@ -52,6 +54,7 @@ export default function GuidePage({ params }) {
         <article>
           <header style={{ background: "var(--cream)", padding: "64px 0 8px" }}>
             <div className="wrap" style={{ maxWidth: 820 }}>
+              <Breadcrumbs items={[["Home","/"],["Guides","/guides/"],[g.title,`/guides/${g.slug}/`]]}/>
               <a href="/guides/" className="eyebrow" style={{ display: "inline-block", marginBottom: 18 }}>← {g.clusterLabel}</a>
               <h1 style={{ fontFamily: "var(--font-serif), serif", fontWeight: 700, fontSize: "clamp(30px,4vw,50px)", lineHeight: 1.1, letterSpacing: "-0.01em", marginBottom: 16 }}>{g.title}</h1>
               {g.description && <p style={{ fontSize: 18, color: "var(--ink-soft)", fontWeight: 300, lineHeight: 1.5 }}>{g.description}</p>}
@@ -111,7 +114,7 @@ export default function GuidePage({ params }) {
           </section>
         )}
       </main>
-      {g.schema && <div dangerouslySetInnerHTML={{ __html: g.schema }} />}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{__html:jsonLd(articleData({title:g.title,description:g.description,path:`/guides/${g.slug}/`,image:g.hero?.src||"/images/hero-couple-bed.jpg"}))}}/>
       <Footer />
     </>
   );
