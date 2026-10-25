@@ -18,7 +18,7 @@ export default function GiftPacksPage() {
         <section style={{ padding: "72px 0", background: "var(--cream)" }}>
           <div className="wrap">
             <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 20 }} data-mom-grid>
-              <ProductCard href="/products/sock-bundle/" img={products["sock-bundle"].img} name="Sock Bundle | 3-Pack" price="$45.00" sub="Mix any three pairs, save $8.85" />
+              <ProductCard href="/products/sock-bundle/" img={products["sock-bundle"].img} name={products["sock-bundle"].name} price={products["sock-bundle"].price} sub="Choose individually priced pairs" />
               <ProductCard href="/comfort-kit/" img="/images/gift-trio.jpg" name="The Comfort Kit" price="$59.95" sub="Coming soon, register interest" />
               <ProductCard href="/corporate/" img="/images/bamboo-pack.jpg" name="Corporate Gifting" price="From $25/head" sub="Client and team gifts that get used" />
             </div>
