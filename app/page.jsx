@@ -1,25 +1,7 @@
-import Announce from "@/components/Announce";
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import Collection from "@/components/Collection";
-import NatureFabric from "@/components/NatureFabric";
-import Movement from "@/components/Movement";
-import TrustRow from "@/components/TrustRow";
-import Footer from "@/components/Footer";
-
-export default function Home() {
-  return (
-    <>
-      <Announce />
-      <Header />
-      <main>
-        <Hero />
-        <Collection />
-        <NatureFabric />
-        <Movement />
-        <TrustRow />
-      </main>
-      <Footer />
-    </>
-  );
-}
+import { pageMetadata } from '@/lib/seo.mjs';
+import Announce from '@/components/Announce';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import StorefrontHome from '@/components/StorefrontHome';
+export const metadata=pageMetadata({title:'Bamboo Socks & Wristbands Australia | PandaBare',description:'Shop Ankle Hugger bamboo ankle socks, crew socks and Wristy wristbands. Choose your colour and fit. A$10 delivery, free at A$50.',path:'/'});
+export default function Home(){return <><a className="pb-skip-link" href="#main-content">Skip to content</a><Announce/><Header/><main id="main-content"><StorefrontHome/></main><Footer/></>;}

@@ -7,7 +7,6 @@ const products = [
   { href: "/products/crew-sock/", name: "Bamboo Crew Sock", price: "$17.95", sub: "Midnight Black · Red Panda · Royal Blue", img: "/images/products/crew-black.jpg" },
   { href: "/products/ankle-hugger/", name: "Ankle Hugger", price: "$15.95", sub: "Midnight Black · Red Panda · Royal Blue · Snow White", img: "/images/products/ankle-black.jpg" },
   { href: "/products/wristy/", name: "Wristy | Bamboo Wristband", price: "$12.95", sub: "Black · White · Red", img: "/images/products/wristy-black.jpg" },
-  { href: "/products/sock-bundle/", name: "Sock Bundle | 3-Pack", price: "$45.00", sub: "Mix any three pairs, save $8.85", img: "/images/products/bundle.jpg" },
 ];
 
 export default function Shop() {
@@ -16,13 +15,13 @@ export default function Shop() {
       <div className="wrap">
         <Reveal style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between", marginBottom: 44 }}>
           <h2 style={{ fontFamily: "var(--font-serif), serif", fontWeight: 500, fontSize: "clamp(28px,3.2vw,40px)" }}>Shop comfort essentials</h2>
-          <a className="textlink" href="#">View all products →</a>
+          <a className="textlink" href="/socks/">View all products →</a>
         </Reveal>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: 20 }} data-shop-grid>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 20 }} data-shop-grid>
           {products.map((p, i) => (
             <Reveal key={p.name} delay={0.08 * i}>
-              <motion.div onClick={() => window.location.href = p.href} role="link" tabIndex={0} whileHover={{ y: -6, boxShadow: "0 16px 38px rgba(26,26,26,.10)" }} transition={{ duration: 0.3 }}
-                style={{ borderRadius: 4, overflow: "hidden", background: "var(--sand)", cursor: "pointer" }}>
+              <motion.a href={p.href} whileHover={{ y: -6, boxShadow: "0 16px 38px rgba(26,26,26,.10)" }} transition={{ duration: 0.3 }}
+                style={{ display: "block", borderRadius: 4, overflow: "hidden", background: "var(--sand)", cursor: "pointer" }}>
                 <div style={{ position: "relative", aspectRatio: "1/1.05", overflow: "hidden" }}>
                   {p.img ? (
                     <Image src={p.img} alt={p.name} fill sizes="(max-width:1000px) 50vw, 25vw" style={{ objectFit: "cover" }} />
@@ -37,7 +36,7 @@ export default function Shop() {
                   <span style={{ fontSize: 13, color: "var(--ink-soft)" }}>{p.price}</span>
                   <span style={{ display: "block", fontSize: 12, color: "var(--ink-soft)", marginTop: 2 }}>{p.sub}</span>
                 </div>
-              </motion.div>
+              </motion.a>
             </Reveal>
           ))}
         </div>

@@ -1,10 +1,1 @@
-export default function Announce() {
-  const items = ["Free shipping on orders $50+", "30-day comfort guarantee", "Bamboo comfort. Lower impact."];
-  return (
-    <div style={{ background: "var(--forest)", color: "rgba(246,243,238,.92)", fontSize: 12 }}>
-      <div className="wrap" style={{ display: "flex", justifyContent: "space-between", gap: 24, padding: "9px 36px" }}>
-        {items.map((t) => <span key={t}>{t}</span>)}
-      </div>
-    </div>
-  );
-}
+export default function Announce(){return <div className="pb-announcement"><div className="wrap"><span>Australia-wide delivery · A$10, free at A$50</span><a href="/help/#returns">30-day comfort guarantee</a></div></div>;}

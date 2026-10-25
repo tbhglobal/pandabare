@@ -1,10 +1,11 @@
+import { pageMetadata } from "@/lib/seo.mjs";
 import Announce from "@/components/Announce";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PageHero from "@/components/PageHero";
 import Material from "@/components/Material";
 
-export const metadata = { title: "About | PandaBare" };
+export const metadata=pageMetadata({title:'About PandaBare | Bamboo Socks & Wristbands',description:'Learn about PandaBare and explore our current range of ankle socks, crew socks and Wristy wristbands.',path:"/about/"});
 
 export default function AboutPage() {
   return (

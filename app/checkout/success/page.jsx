@@ -2,7 +2,7 @@ import Announce from "@/components/Announce";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-export const metadata = { title: "Order confirmed | PandaBare" };
+export const metadata = { title: "Checkout return | PandaBare", robots: { index: false, follow: false } };
 
 export default function Success() {
   return (
@@ -14,8 +14,8 @@ export default function Success() {
           <div style={{ width: 64, height: 64, borderRadius: "50%", background: "var(--forest)", display: "grid", placeItems: "center", margin: "0 auto 24px" }}>
             <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="#fff" strokeWidth="2"><path d="M5 13l4 4L19 7" /></svg>
           </div>
-          <h1 style={{ fontFamily: "var(--font-serif), serif", fontWeight: 500, fontSize: "clamp(28px,4vw,40px)", marginBottom: 12 }}>Order confirmed</h1>
-          <p style={{ color: "var(--ink-soft)", marginBottom: 28 }}>Thanks for choosing bamboo. Your receipt is on its way to your inbox, and your socks are on their way to the post.</p>
+          <h1 style={{ fontFamily: "var(--font-serif), serif", fontWeight: 500, fontSize: "clamp(28px,4vw,40px)", marginBottom: 12 }}>Thank you for visiting PandaBare</h1>
+          <p style={{ color: "var(--ink-soft)", marginBottom: 28 }}>If you completed payment, please check your email for your order confirmation. This page does not verify payment or dispatch. If you need help, contact orders@pandabare.me.</p>
           <a href="/" className="btn btn-forest">Back to the shop</a>
         </div>
       </main>

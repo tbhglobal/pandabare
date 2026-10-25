@@ -1,11 +1,9 @@
+import { pageMetadata } from "@/lib/seo.mjs";
 import Announce from "@/components/Announce";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-export const metadata = {
-  title: "Shipping, Returns & Help | PandaBare",
-  description: "Shipping, returns, sock care and common questions about PandaBare bamboo socks and wristbands.",
-};
+export const metadata=pageMetadata({title:'Shipping, Returns & Sock Care | PandaBare',description:'PandaBare shipping, returns, fit questions and care information. A$10 Australian delivery, free on orders of A$50 or more.',path:"/help/"});
 
 const serif = { fontFamily: "var(--font-serif), serif", fontWeight: 600 };
 const h2 = { ...serif, fontSize: 28, lineHeight: 1.2, marginBottom: 14 };

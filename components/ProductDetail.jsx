@@ -55,7 +55,7 @@ export default function ProductDetail({ product }) {
               <span style={{ width: 28, textAlign: "center", fontWeight: 500 }}>{qty}</span>
               <button onClick={() => setQty(qty + 1)} style={{ width: 40, height: "100%", border: "none", background: "none", fontSize: 17, cursor: "pointer" }}>+</button>
             </div>
-            <button className="btn btn-forest" style={{ flex: 1 }} onClick={add}>{added ? "Added to bag ✓" : (product.cartId === null ? "Pick your three pairs" : "Add to bag")}</button>
+            <button className="btn btn-forest" style={{ flex: 1 }} onClick={add}>{added ? "Added to bag ✓" : (product.cartId === null ? "Choose your socks" : "Add to bag")}</button>
           </div>
 
           <div style={{ borderTop: "1px solid rgba(26,26,26,.12)" }}>

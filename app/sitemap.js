@@ -15,16 +15,13 @@ const staticRoutes = [
 ];
 
 export default function sitemap() {
-  const now = new Date();
   const routes = staticRoutes.map((p) => ({
     url: `${BASE}/${p ? p + "/" : ""}`,
-    lastModified: now,
     changeFrequency: p === "" ? "weekly" : "monthly",
     priority: p === "" ? 1 : 0.8,
   }));
   const guides = getSlugs().map((slug) => ({
     url: `${BASE}/guides/${slug}/`,
-    lastModified: now,
     changeFrequency: "monthly",
     priority: 0.6,
   }));
