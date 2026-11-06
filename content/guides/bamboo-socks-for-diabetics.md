@@ -13,7 +13,7 @@ hero_image:
   placement: hero, top of article beneath H1
 body_images:
   - filename: assets/ankle-huggers.png
-    alt: bamboo ankle socks with a non-binding, loose-fitting top and no tight elastic band
+    alt: PandaBare ankle socks
     placement: within "what features actually matter" section, next to the sock features table
   - filename: assets/lifestyle-coffee.jpg
     alt: relaxed morning scene with soft bamboo socks, a calm reminder that comfortable feet start with the right daily habits
@@ -124,11 +124,9 @@ Here's a practical breakdown of the features clinicians and Diabetes Australia c
 | Smooth interior, no rough threads | No loose stitching or coarse texture against the skin | Lowers the chance of ongoing micro-irritation you might not feel straight away |
 | Breathable natural fibre | Cotton, wool or bamboo rather than fully synthetic blends | Diabetes Australia names these as suitable, breathable, comfortable choices |
 
-Bamboo viscose socks can tick several of these boxes at once: they're naturally soft against the skin, they manage moisture reasonably well, and a well-made pair will have a flat, seamless toe. If you want the deeper fibre comparison, our guide on [bamboo versus merino wool socks](/guides/bamboo-vs-merino-wool-socks) covers how the two natural fibres stack up for everyday comfort.
+Fibre content alone does not tell you whether a sock has a suitable cuff or toe seam. Check the construction of the specific pair and ask your podiatrist which features matter for you. If you want the deeper fibre comparison, our guide on [bamboo versus merino wool socks](/guides/bamboo-vs-merino-wool-socks) covers how the two natural fibres stack up for everyday comfort.
 
-For context on our own range, our [bamboo crew socks](/products/bamboo-crew-socks) and [bamboo ankle socks](/products/bamboo-ankle-socks) are made with non-binding, no-tight-elastic tops and a flat seamless toe closure as standard design choices, not as a medical claim. They're comfort essentials, not a diabetic medical device, and they're not a substitute for footwear or hosiery specifically prescribed by your podiatrist.
-
-Assets/ankle-huggers.png: bamboo ankle socks with a non-binding, loose-fitting top and no tight elastic band. Place this image beside the features table so readers can see what a non-binding cuff actually looks like.
+PandaBare sells everyday [crew socks](/products/crew-sock/) and [ankle socks](/products/ankle-hugger/). This guide does not establish that either product meets your clinical requirements. Ask us to confirm cuff and toe construction before buying, and discuss suitability with your podiatrist.
 
 ## Are bamboo socks better than cotton for diabetic feet?
 
@@ -153,7 +151,6 @@ These are general habits, not a personalised plan. Diabetes Australia runs a [Fo
 
 Washing your socks properly also plays a small supporting role, since built-up residue or reduced elasticity in old socks can affect fit over time. Our guide on [how to wash bamboo socks](/guides/how-to-wash-bamboo-socks) covers the basics of keeping them in good shape.
 
-Assets/lifestyle-coffee.jpg: relaxed morning scene with soft bamboo socks, a calm reminder that comfortable feet start with the right daily habits. Place this before the FAQ section, as a gentle visual pause rather than a product close-up.
 
 ## What should you ask your GP or podiatrist about diabetic foot care?
 
@@ -200,4 +197,4 @@ If your GP sets up a Chronic Condition Management Plan, you may be eligible for 
 
 *This article provides general information about sock features and foot care habits. It is not medical advice and does not replace an assessment by your GP, endocrinologist or podiatrist. If you notice a wound, infection, numbness, colour change or any concerning symptom in your feet, seek professional medical advice promptly.*
 
-Looking for a soft, everyday pair to start with. Our [bamboo crew socks](/products/bamboo-crew-socks) are built with a non-binding top and seamless toe as standard, part of PandaBare's wider approach to soft essentials for slower living.
+Before choosing a pair, confirm the size and construction details with the seller and check any clinical requirements with your podiatrist.
