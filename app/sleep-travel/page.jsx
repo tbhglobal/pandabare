@@ -1,26 +1,8 @@
-import Announce from "@/components/Announce";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import PageHero from "@/components/PageHero";
-import Moments from "@/components/Moments";
-
-export const metadata = { title: "Sleep & Travel | PandaBare" };
-
-export default function SleepTravelPage() {
-  return (
-    <>
-      <Announce />
-      <Header />
-      <main>
-        <PageHero eyebrow="Sleep & travel" title="Comfort that travels with you." copy="From bed socks to long-haul flights, PandaBare essentials are built for rest wherever you find it. The sleep mask and travel pouch arrive with the Comfort Kit." img="/images/hero-couple.jpg" alt="Couple relaxing in PandaBare bamboo socks" />
-        <Moments />
-        <section style={{ padding: "0 0 96px", background: "var(--cream)", textAlign: "center" }}>
-          <div className="wrap">
-            <a href="/comfort-kit/" className="btn btn-forest">Explore the Comfort Kit</a>
-          </div>
-        </section>
-      </main>
-      <Footer />
-    </>
-  );
-}
+import Announce from '@/components/Announce';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import PageHero from '@/components/PageHero';
+import { pageMetadata } from '@/lib/seo.mjs';
+import { ShopCollection, DeliveryNote } from '@/components/StorefrontHome';
+export const metadata=pageMetadata({title:'Socks for Home & Travel | PandaBare',description:'Explore PandaBare ankle and crew socks from the current range. Compare cuts, choose your colour and fit, and check Australian delivery before ordering.',path:'/sleep-travel/'});
+export default function SleepTravel(){return <><a className="pb-skip-link" href="#main-content">Skip to content</a><Announce/><Header/><main id="main-content"><PageHero eyebrow="At home & away" title="Choose your next everyday pair." copy="Looking for socks for time at home or your next trip? Start with the cut you prefer, then check the available colours and fit details in the current collection." img="/images/hero-couple.jpg" alt="Couple relaxing in PandaBare socks"/><ShopCollection/><section className="wrap pb-section"><h2>A few useful starting points</h2><div className="pb-delivery-grid"><div><h3>Choose your cut</h3><p>Compare the coverage of <a className="pb-inline-link" href="/guides/crew-vs-ankle-socks/">crew and ankle socks</a>, then choose the product you prefer.</p></div><div><h3>Pack and care</h3><p>Read <a className="pb-inline-link" href="/guides/how-many-pairs-of-socks-do-you-need/">how many pairs to keep on hand</a> and our <a className="pb-inline-link" href="/help/#care">care guide</a>.</p></div><div><h3>Plan the total</h3><p>See <a className="pb-inline-link" href="/socks/#basket-ideas">basket ideas and delivery totals</a>. Every product is priced individually.</p></div></div></section><DeliveryNote/></main><Footer/></>;}

@@ -7,7 +7,7 @@ export function ShopCollection({ heading=true }) {
       <div className="pb-category-grid">{Object.entries(storefrontProducts).map(([key,p])=><a className="pb-category-card" href={p.path} key={key}>
         <div className="pb-category-image"><Image src={p.card} alt={p.name} fill sizes="(max-width: 650px) 100vw, 33vw" style={{objectFit:'cover'}}/><span className="pb-category-arrow" aria-hidden="true">↗</span></div>
         <div className="pb-category-caption"><div><span className="pb-kicker">{p.eyebrow}</span><h3>{p.name}</h3><p>{p.sizes ? 'Small & Large · 4 colours' : `One size · ${p.colours.length} colours`}</p></div><b>{aud(p.priceCents)}</b></div>
-      </a>)}</div>
+      </a>)}</div><p className="pb-basket-note">Shopping for more than one? <a className="pb-inline-link" href="/socks/#basket-ideas">Compare basket ideas and delivery totals</a>.</p>
     </div>
   </section>;
 }

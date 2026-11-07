@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const cols = [
-  { h: "Shop", links: [["Ankle Socks","/products/ankle-hugger/"],["Crew Socks","/products/crew-sock/"],["Wristies","/products/wristy/"],["All Socks","/socks/"]] },
+  { h: "Shop", links: [["Ankle Socks","/products/ankle-hugger/"],["Crew Socks","/products/crew-sock/"],["Wristies","/products/wristy/"],["Shop all","/socks/"],["Gift ideas","/gift-packs/"]] },
   { h: "Help", links: [["Shipping","/help/#shipping"],["Returns","/help/#returns"],["FAQs","/help/#faq"],["Care Guide","/help/#care"],["Contact Us","mailto:orders@pandabare.me"]] },
   { h: "About", links: [["Our Story","/about/"],["Why Bamboo","/about/"],["Guides & Journal","/guides/"],["Sustainability","/about/"],["Corporate","/corporate/"]] },
 ];

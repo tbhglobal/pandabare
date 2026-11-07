@@ -1,12 +1,14 @@
 "use client";
 import Image from "next/image";
 import { isSoldOut, SOLD_OUT_MESSAGE } from "@/lib/availability.mjs";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import { storefrontProducts, aud } from "@/lib/storefront";
 import { useCart, FREE_SHIPPING_THRESHOLD, SHIPPING_FEE } from "@/lib/cart";
 
 export default function CartDrawer() {
   const cart = useCart();
+  const reduceMotion = useReducedMotion();
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
   const drawer = useRef(null);
@@ -24,6 +26,9 @@ export default function CartDrawer() {
   useEffect(() => {
     if (!isOpen) return;
     const previousFocus = document.activeElement;
+    const background = [...document.querySelectorAll('body > header, body > main, body > footer, body > .pb-announcement, body > .pb-skip-link')];
+    const previousInert = background.map(node=>node.inert);
+    background.forEach(node=>{node.inert=true;});
     const overflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
     closeButton.current?.focus();
@@ -41,7 +46,7 @@ export default function CartDrawer() {
       else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first?.focus(); }
     };
     document.addEventListener("keydown", keydown);
-    return () => { document.body.style.overflow = overflow; document.removeEventListener("keydown", keydown); previousFocus?.focus?.(); };
+    return () => { background.forEach((node,i)=>{node.inert=previousInert[i];}); document.body.style.overflow = overflow; document.removeEventListener("keydown", keydown); previousFocus?.focus?.(); };
   }, [isOpen]);
   useEffect(() => {
     const pending = pendingRemoval.current;
@@ -68,6 +73,7 @@ export default function CartDrawer() {
   const free = subtotal >= FREE_SHIPPING_THRESHOLD;
   const shipping = items.length === 0 ? 0 : free ? 0 : SHIPPING_FEE;
   const toGo = (FREE_SHIPPING_THRESHOLD - subtotal).toFixed(2);
+  const suggestions = Object.entries(storefrontProducts).filter(([category])=>!items.some(item=>item.id.startsWith(category+'-')));
 
   const checkout = async () => {
     if (hasSoldOutItem) { setError(SOLD_OUT_MESSAGE); return; }
@@ -94,11 +100,11 @@ export default function CartDrawer() {
     <AnimatePresence>
       {open && (
         <>
-          <motion.div key="ov" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+          <motion.div key="ov" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{duration:reduceMotion?0:0.2}}
             onClick={() => setOpen(false)}
             style={{ position: "fixed", inset: 0, background: "rgba(16,19,16,.5)", zIndex: 90 }} />
-          <motion.aside id="cart-dialog" ref={drawer} role="dialog" aria-modal="true" aria-labelledby="cart-title" key="dr" initial={{ x: "100%" }} animate={{ x: 0 }} exit={{ x: "100%" }}
-            transition={{ type: "tween", duration: 0.32, ease: [0.22, 1, 0.36, 1] }}
+          <motion.aside id="cart-dialog" ref={drawer} role="dialog" aria-modal="true" aria-labelledby="cart-title" key="dr" initial={{ x: reduceMotion ? 0 : "100%" }} animate={{ x: 0 }} exit={{ x: "100%" }}
+            transition={{ type: "tween", duration: reduceMotion ? 0 : 0.32, ease: [0.22, 1, 0.36, 1] }}
             style={{ position: "fixed", top: 0, right: 0, bottom: 0, width: "min(420px, 92vw)", background: "var(--cream)", zIndex: 91, display: "flex", flexDirection: "column", boxShadow: "-18px 0 50px rgba(0,0,0,.25)" }}>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "20px 24px", borderBottom: "1px solid rgba(26,26,26,.1)" }}>
               <b id="cart-title" style={{ fontSize: 13, letterSpacing: ".22em", textTransform: "uppercase" }}>Your cart</b>
@@ -107,7 +113,7 @@ export default function CartDrawer() {
 
             <div style={{ flex: 1, overflowY: "auto", padding: "8px 24px" }}>
               {hasSoldOutItem && <p role="alert" style={{ color: "#A63A2B", padding: "16px 0", fontSize: 13 }}>{SOLD_OUT_MESSAGE}</p>}
-              {items.length === 0 && <p style={{ color: "var(--ink-soft)", padding: "32px 0", textAlign: "center" }}>Your cart is empty.</p>}
+              {items.length === 0 && <div className="pb-cart-empty"><p>Your cart is empty.</p><p>Choose a product, then select your colour and fit.</p></div>}
               {items.map((i) => (
                 <div key={i.id} style={{ display: "flex", gap: 14, padding: "16px 0", borderBottom: "1px solid rgba(26,26,26,.08)" }}>
                   {i.img && (
@@ -125,21 +131,20 @@ export default function CartDrawer() {
                         <span style={{ width: 22, textAlign: "center", fontSize: 13 }}>{i.qty}</span>
                         <button disabled={i.qty >= 50 || isSoldOut(i.id)} aria-label={`Increase ${i.name} ${i.colour} ${i.size || ""} quantity`} onClick={() => setQty(i.id, i.qty + 1)} style={{ width: 44, height: 44, border: "none", background: "none", cursor: "pointer" }}>+</button>
                       </div>
-                      <button ref={(node) => { if (node) rowButtons.current.set(i.id, node); else rowButtons.current.delete(i.id); }} onClick={() => removeItem(i.id)} style={{ background: "none", border: "none", fontSize: 12, color: "var(--ink-soft)", cursor: "pointer", textDecoration: "underline" }}>Remove</button>
+                      <button ref={(node) => { if (node) rowButtons.current.set(i.id, node); else rowButtons.current.delete(i.id); }} aria-label={`Remove ${i.name} ${i.colour} ${i.size || ""}`} onClick={() => removeItem(i.id)} style={{ background: "none", border: "none", fontSize: 12, color: "var(--ink-soft)", cursor: "pointer", textDecoration: "underline" }}>Remove</button>
                     </div>
                   </div>
                   <span style={{ fontSize: 13.5, fontWeight: 600 }}>${(i.price * i.qty).toFixed(2)}</span>
                 </div>
               ))}
+              {suggestions.length>0 && <nav className="pb-cart-suggestions" aria-label={items.length?'Add another favourite':'Start shopping'}><h2>{items.length?'Add another favourite':'Start with your favourite'}</h2><p>Choose colour and fit before adding.</p>{suggestions.map(([key,p])=><a key={key} href={p.path} onClick={()=>setOpen(false)}><span>{p.name}</span><b>{aud(p.priceCents)} <span aria-hidden="true">↗</span></b></a>)}</nav>}
+              <a className="pb-inline-link pb-cart-basket-link" href="/socks/#basket-ideas" onClick={()=>setOpen(false)}>See basket ideas and delivery totals</a>
             </div>
 
+            <div className="pb-cart-continue"><button type="button" className="btn btn-line" onClick={()=>setOpen(false)}>Continue shopping</button></div>
             {items.length > 0 && (
               <div style={{ padding: "18px 24px 24px", borderTop: "1px solid rgba(26,26,26,.12)", background: "var(--sand)" }}>
-                {!free && (
-                  <div style={{ fontSize: 12.5, color: "var(--forest)", marginBottom: 10 }}>
-                    Spend ${toGo} more for free shipping
-                  </div>
-                )}
+                <div className="pb-cart-progress"><p role="status" aria-live="polite">{free?'Free Australian delivery unlocked.':`A$${toGo} to go for free Australian delivery.`}</p><progress aria-label="Progress towards free Australian delivery" value={Math.min(subtotal,FREE_SHIPPING_THRESHOLD)} max={FREE_SHIPPING_THRESHOLD}/></div>
                 <div style={{ display: "flex", justifyContent: "space-between", fontSize: 13.5, marginBottom: 4 }}>
                   <span>Subtotal (AUD)</span><span>${subtotal.toFixed(2)}</span>
                 </div>

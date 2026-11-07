@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useCart } from '@/lib/cart';
 import { isSoldOut } from '@/lib/availability.mjs';
 import { storefrontProducts, cartId, aud } from '@/lib/storefront';
@@ -12,6 +12,13 @@ export default function ProductPurchase({category='ankle'}) {
   const [size,setSize]=useState('');
   const [qty,setQty]=useState(1);
   const [added,setAdded]=useState(false);
+  useEffect(()=>{
+    const value=new URLSearchParams(window.location.search).get('quantity');
+    if (value && /^\d+$/.test(value)) {
+      const quantity=Number(value);
+      if (Number.isInteger(quantity) && quantity>=1 && quantity<=50) setQty(quantity);
+    }
+  },[]);
   const cart=useCart();
   const colour=product.colours[colourIndex];
   const id=cartId(category,colour.slug,size);
@@ -34,7 +41,7 @@ export default function ProductPurchase({category='ankle'}) {
           {product.sizes ? <fieldset className="pb-options"><legend>Size <span>{size||'Please choose'}</span></legend><div className="pb-size-buttons">{product.sizes.map(s=><button type="button" key={s} aria-label={`${colour.name}: ${s}${isSoldOut(cartId(category,colour.slug,s))?" (sold out)":""}`} disabled={isSoldOut(cartId(category,colour.slug,s))} aria-pressed={size===s} onClick={()=>{setSize(s);setAdded(false);}}>{s}{isSoldOut(cartId(category,colour.slug,s))?" — sold out":""}</button>)}</div>{colourHasSoldOutSize && <p role="status" className="pb-fit-note">Small / Snow White is sold out. Choose Large or another colour.</p>}<p className="pb-fit-note">Choose a size before adding. Not sure about fit? <a href="mailto:orders@pandabare.me">Ask us for help.</a></p></fieldset> : <div className="pb-fit-note pb-one-size"><b>One size</b><p>{product.sizing}</p></div>}
           <div className="pb-buy-row"><div className="pb-quantity"><button type="button" aria-label="Decrease quantity" disabled={!quantityValid||qty<=1} onClick={()=>setQty(qty-1)}>−</button><label className="pb-sr-only" htmlFor="product-quantity">Quantity</label><input id="product-quantity" aria-describedby="quantity-help" aria-invalid={!quantityValid} inputMode="numeric" type="number" min="1" max="50" value={qty} onChange={e=>{setQty(e.target.value===''?'':Number(e.target.value));setAdded(false);}}/><button type="button" aria-label="Increase quantity" disabled={!quantityValid||qty>=50} onClick={()=>setQty(qty+1)}>+</button></div><button type="button" className="btn btn-forest" onClick={add} disabled={!id||soldOut||!quantityValid}>{soldOut?'Sold out':!id?'Choose a size':'Add to cart'} <span aria-hidden="true">↗</span></button></div>
           <p id="quantity-help" className="pb-fit-note">{quantityValid?`Item total: ${aud(product.priceCents*qty)}. Shipping is calculated in your cart.`:'Enter a whole quantity from 1 to 50.'}</p><p className="pb-added" role="status" aria-live="polite">{added?`${qty} × ${product.name}${size?' · '+size:''} added to your cart.`:' '}</p>
-          <div className="pb-product-help"><details><summary>Delivery & returns</summary><p>Delivery within Australia is A$10, or free on orders of A$50 or more. See our <a href="/help/#shipping">shipping information</a> and <a href="/help/#returns">30-day comfort guarantee</a>. For an order update, email orders@pandabare.me.</p></details><details><summary>Choosing your fit</summary><p>{product.sizes ? "Ankle Huggers have Small and Large options. Choose the size you need before adding to your cart; contact us if you need sizing help." : product.sizing} {category === 'wristy' ? <>Read our <a href="/guides/wristbands-for-padel-and-tennis/">padel and tennis wristband guide</a> and <a href="/guides/do-sweatbands-actually-work/">how sweatbands work</a>.</> : <>Read our <a href="/guides/crew-vs-ankle-socks/">crew and ankle sock comparison</a>.</>} Browse the <a href="/socks/">full collection</a>.</p></details><details><summary>Care guide</summary><p>Cold machine wash and line dry in the shade. See the <a href="/help/#care">care guide</a> for more details.</p></details><p className="pb-checkout-note">Checkout is handled securely by Stripe. Review your colour, size and quantity in the cart before paying.</p></div>
+          <p className="pb-fit-note"><a href="/socks/#basket-ideas">See basket ideas and delivery totals</a></p><div className="pb-product-help"><details><summary>Delivery & returns</summary><p>Delivery within Australia is A$10, or free on orders of A$50 or more. See our <a href="/help/#shipping">shipping information</a> and <a href="/help/#returns">30-day comfort guarantee</a>. For an order update, email orders@pandabare.me.</p></details><details><summary>Choosing your fit</summary><p>{product.sizes ? "Ankle Huggers have Small and Large options. Choose the size you need before adding to your cart; contact us if you need sizing help." : product.sizing} {category === 'wristy' ? <>Read our <a href="/guides/wristbands-for-padel-and-tennis/">padel and tennis wristband guide</a> and <a href="/guides/do-sweatbands-actually-work/">how sweatbands work</a>.</> : <>Read our <a href="/guides/crew-vs-ankle-socks/">crew and ankle sock comparison</a>.</>} Browse the <a href="/socks/">full collection</a>.</p></details><details><summary>Care guide</summary><p>Cold machine wash and line dry in the shade. See the <a href="/help/#care">care guide</a> for more details.</p></details><p className="pb-checkout-note">Checkout is handled securely by Stripe. Review your colour, size and quantity in the cart before paying.</p></div>
         </div>
       </div>
     </section>

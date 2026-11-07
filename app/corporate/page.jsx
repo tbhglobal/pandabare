@@ -1,40 +1,8 @@
-import Announce from "@/components/Announce";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import PageHero from "@/components/PageHero";
-
-export const metadata = { title: "Corporate Gifting | PandaBare" };
-
-const points = [
-  ["Gifts that get used", "Socks and comfort essentials beat branded pens. Your logo goes on the packaging, not the product, so people actually wear them."],
-  ["Plastic-free and on-brand", "Kraft packaging, a story about lower-impact bamboo, and a gift that says your business thinks about the details."],
-  ["Simple to order", "Tell us headcount and budget. We handle packing, notes and delivery, to one office or a hundred desks."],
-];
-
-export default function CorporatePage() {
-  return (
-    <>
-      <Announce />
-      <Header />
-      <main>
-        <PageHero eyebrow="Corporate" title="Client gifts they keep." copy="Bamboo comfort essentials, packed beautifully for teams, clients and events. From $25 a head." img="/images/hero-couple.jpg" alt="Couple relaxing in PandaBare bamboo socks" />
-        <section style={{ padding: "88px 0", background: "var(--cream)" }}>
-          <div className="wrap" style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 44 }} data-mom-grid>
-            {points.map(([t, b]) => (
-              <div key={t} style={{ borderTop: "2px solid var(--forest)", paddingTop: 22 }}>
-                <h3 style={{ fontFamily: "var(--font-serif), serif", fontWeight: 500, fontSize: 20, marginBottom: 10 }}>{t}</h3>
-                <p style={{ fontSize: 14.5, color: "var(--ink-soft)" }}>{b}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-        <section style={{ padding: "0 0 96px", background: "var(--cream)", textAlign: "center" }}>
-          <div className="wrap">
-            <a href="mailto:hello@pandabare.me?subject=Corporate%20gifting%20enquiry" className="btn btn-forest">Enquire about corporate gifting</a>
-          </div>
-        </section>
-      </main>
-      <Footer />
-    </>
-  );
-}
+import Announce from '@/components/Announce';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import PageHero from '@/components/PageHero';
+import { pageMetadata } from '@/lib/seo.mjs';
+import { ShopCollection, DeliveryNote } from '@/components/StorefrontHome';
+export const metadata=pageMetadata({title:'Team & Client Gift Enquiries | PandaBare',description:'Ask PandaBare about socks and wristbands for a team, client or event. Confirm current product availability, quantities, packaging, costs and timing before ordering.',path:'/corporate/'});
+export default function Corporate(){return <><a className="pb-skip-link" href="#main-content">Skip to content</a><Announce/><Header/><main id="main-content"><PageHero eyebrow="Team & client gifts" title="Start with the people. Choose the details." copy="Considering PandaBare socks or wristbands for a team, client or event? Tell us what you have in mind so we can confirm the products and options available for your order." img="/images/products/bundle.jpg" alt="PandaBare socks"/><section className="wrap pb-section"><h2>What to include in your enquiry</h2><div className="pb-delivery-grid"><div><h3>Products & quantities</h3><p>Tell us which products, colours and quantities you are considering. Include any fit requirements; please confirm sizes with recipients where possible.</p></div><div><h3>Budget & destination</h3><p>Share your budget and delivery postcode, and whether the order is going to one location or needs another arrangement.</p></div><div><h3>Timing & presentation</h3><p>Include the date you need the items and any packaging or presentation request. Availability, costs and timing need confirmation before ordering.</p></div></div><p style={{marginTop:28}}>Retail product prices are shown below. Please confirm availability, order costs, presentation options and timing with us before placing a larger order.</p><a className="btn btn-forest" style={{marginTop:24}} href="mailto:orders@pandabare.me?subject=Team%20and%20client%20gift%20enquiry">Ask about a team or client order</a></section><ShopCollection/><DeliveryNote/></main><Footer/></>;}

@@ -1,15 +1,18 @@
 "use client";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useCart } from "@/lib/cart";
 
-const links = ["Ankle Socks", "Crew Socks", "Wristies", "Guides", "About"];
-const hrefs = ["/products/ankle-hugger/", "/products/crew-sock/", "/products/wristy/", "/guides/", "/about/"];
+const links = ["Shop all", "Ankle Socks", "Crew Socks", "Wristies", "Gift ideas", "Guides"];
+const hrefs = ["/socks/", "/products/ankle-hugger/", "/products/crew-sock/", "/products/wristy/", "/gift-packs/", "/guides/"];
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const cart = useCart();
+  const pathname = usePathname();
+  const current = href => pathname?.replace(/\/$/,'') === href.replace(/\/$/,'') ? 'page' : undefined;
   useEffect(() => {
     const on = () => setScrolled(window.scrollY > 40);
     window.addEventListener("scroll", on, { passive: true });
@@ -40,7 +43,7 @@ export default function Header() {
           <a href="/"><Image src="/images/logo-horizontal.png" alt="PandaBare" width={145} height={40} style={{ height: 34, width: "auto" }} priority /></a>
         </div>
         <nav style={{ display: "flex", gap: 30, fontSize: 13.5, fontWeight: 500 }} className="desktop-nav">
-          {links.map((l, i) => <a key={l} href={hrefs[i]} style={{ padding: "4px 0" }}>{l}</a>)}
+          {links.map((l, i) => <a key={l} href={hrefs[i]} aria-current={current(hrefs[i])} style={{ padding: "4px 0" }}>{l}</a>)}
         </nav>
         <button aria-haspopup="dialog" aria-controls="cart-dialog" aria-label={`Open cart, ${cart ? cart.count : 0} items`} onClick={() => { setMenuOpen(false); cart && cart.setOpen(true); }} style={{ fontSize: 13.5, fontWeight: 500, background: "none", border: "none", cursor: "pointer", fontFamily: "inherit", color: "inherit" }}>Cart ({cart ? cart.count : 0})</button>
       </div>
@@ -48,7 +51,7 @@ export default function Header() {
       {menuOpen && (
         <nav className="mobile-menu" style={{ position: "fixed", left: 0, right: 0, top: scrolled ? 60 : 70, bottom: 0, background: "var(--cream)", padding: "12px 24px 40px", overflowY: "auto", borderTop: "1px solid rgba(26,26,26,.07)" }}>
           {links.map((l, i) => (
-            <a key={l} href={hrefs[i]} onClick={() => setMenuOpen(false)}
+            <a key={l} href={hrefs[i]} aria-current={current(hrefs[i])} onClick={() => setMenuOpen(false)}
               style={{ display: "block", padding: "18px 0", fontFamily: "var(--font-serif), serif", fontSize: 24, fontWeight: 600, borderBottom: "1px solid rgba(26,26,26,.08)" }}>
               {l}
             </a>
