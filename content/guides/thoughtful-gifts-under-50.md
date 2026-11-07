@@ -6,7 +6,7 @@ meta_description: Thoughtful gifts under $50 that read as considered, not cheap.
 primary_keyword: thoughtful gifts under $50
 secondary_keywords: ["gifts under $50 Australia", "Kris Kringle gift ideas Australia", "budget gifts that don't look cheap", "Secret Santa gift ideas under $50", "quality gifts on a budget"]
 cluster: E - gifting
-internal_links: ["/guides/christmas-stocking-fillers-not-landfill", "/guides/corporate-gifts-clients-keep", "/guides/gifts-for-people-who-have-everything", "/guides/bamboo-socks-australia-buyers-guide"]
+internal_links: ["/guides/are-bamboo-socks-better-than-cotton", "/products/ankle-hugger/", "/products/crew-sock/", "/products/wristy/", "/gift-packs/", "/guides/15-minute-wind-down-routine", "/guides/gifts-for-people-who-have-everything", "/guides/christmas-stocking-fillers-not-landfill", "/guides/corporate-gifts-clients-keep", "/corporate/", "/guides/crew-vs-ankle-socks", "/guides/bamboo-socks-australia-buyers-guide"]
 hero_image:
   filename: assets/hero-socks-wristband.jpg
   alt: Thoughtful gifts under $50 laid out with bamboo socks and wristbands in warm natural light
@@ -124,15 +124,13 @@ If you are buying for a genuine Secret Santa at $20 to $30, a single pair of bam
 
 ## Gift ideas under $50, by recipient
 
-| Recipient | Gift idea | Approx. price (AUD) | Why it works |
-|---|---|---|---|
-| Office Kris Kringle (any colleague) | Bamboo ankle socks (pair) | $20 to $28 | Fits a typical $20 to $30 office budget, suits most people, no guesswork on style |
-| The friend who travels a lot | Travel pouch | $25 to $40 | Solves a real annoyance (cable and toiletry chaos) rather than adding clutter |
-| The person who never switches off | Sleep mask | $25 to $35 | A genuine wind-down cue, not a novelty item |
-| The active friend or PT-obsessed sibling | Sport wristbands (set) | $20 to $30 | Practical, used weekly, not seasonal |
-| Someone who has everything | PandaBare Comfort Kit | $45 to $50 | Curated set feels complete on its own, no padding needed |
-| A new parent short on sleep | Bamboo crew socks and sleep mask combo | $40 to $50 | Comfort they will not buy for themselves post-baby |
-| A client or work contact | Small corporate gift set | $35 to $50 | Reads as considered, not branded merchandise |
+| Current PandaBare option | Product price (AUD) | Total with single-item Australian delivery |
+|---|---|---|
+| [Ankle Hugger](/products/ankle-hugger/) | A$15.95 | A$25.95 |
+| [Bamboo Crew Sock](/products/crew-sock/) | A$17.95 | A$27.95 |
+| [Wristy](/products/wristy/) | A$12.95 | A$22.95 |
+
+These are individual products from the current shop, not pre-packed sets. Choose colour and fit on the product page. Australian delivery is A$10 below a A$50 subtotal and free at A$50 or more. Compare [basket ideas and delivery totals](/gift-packs/) if you are buying several items.
 
 For the person who never switches off, pairing a sleep mask with a slower morning ritual works well. Our [15-minute wind-down routine guide](/guides/15-minute-wind-down-routine) is a natural companion if you want to write a short note explaining the gift.
 
@@ -141,8 +139,6 @@ For the person who never switches off, pairing a sleep mask with a slower mornin
 ## What is the best under-$50 gift for someone who has everything?
 
 Look for something they would never buy themselves, not something flashy. People with full homes and full wardrobes are usually short on small comfort upgrades: a proper sleep mask, a decent travel pouch, socks that do not need replacing every season.
-
-A curated set, like the [PandaBare Comfort Kit](/comfort-kit), solves the "what do I even get them" problem in one go. It reads as a complete, considered gift rather than a single small item that needs extra padding around it.
 
 For more ideas specifically for this tricky recipient, see our guide on [gifts for people who have everything](/guides/gifts-for-people-who-have-everything).
 
@@ -158,7 +154,7 @@ If you are buying for Christmas stockings specifically, our [guide to stocking f
 
 Yes, slightly. Corporate gifts under $50 need to feel useful and understated rather than logo-heavy or novelty-driven, since they represent the business, not just you personally.
 
-A simple, well-packaged comfort item, like socks or a travel pouch, tends to land better than branded pens or mugs. See our [guide to corporate gifts that clients actually keep](/guides/corporate-gifts-clients-keep) for a longer breakdown, and PandaBare's [corporate gifting](/corporate-gifting) range if you are buying for a team or client list.
+A simple, well-packaged comfort item, like socks or a travel pouch, tends to land better than branded pens or mugs. See our [guide to corporate gifts that clients actually keep](/guides/corporate-gifts-clients-keep) for a longer breakdown, and PandaBare's [team and client enquiry page](/corporate/) to confirm products, quantities and costs before ordering.
 
 ## A simple checklist before you buy
 

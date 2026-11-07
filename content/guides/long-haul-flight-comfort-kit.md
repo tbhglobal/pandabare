@@ -11,13 +11,7 @@ secondary_keywords:
   - "jet lag tips long-haul flights"
   - "best socks for flying"
 cluster: "D - travel"
-internal_links:
-  - /guides/how-to-sleep-on-a-plane-economy
-  - /guides/best-socks-for-flying
-  - /guides/carry-on-essentials-australian-travellers-2026
-  - /guides/what-to-look-for-in-a-sleep-mask
-  - /comfort-kit
-  - /products/travel-pouch
+internal_links: ["/guides/carry-on-essentials-australian-travellers-2026", "/guides/best-socks-for-flying", "/guides/how-to-sleep-on-a-plane-economy", "/guides/what-to-look-for-in-a-sleep-mask"]
 body_images:
   - filename: assets/socks-and-wristbands.jpg
     alt: "PandaBare bamboo socks and sport wristbands flatlay, the basis of a long-haul comfort kit"
@@ -29,78 +23,6 @@ hero_image:
   filename: assets/lifestyle-coffee.jpg
   alt: "Cosy travel-ready bamboo socks styled with a warm drink, slow-living mood for long-haul flight comfort"
   placement: "Top of article, under H1"
-schema: |
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "Long-haul flight comfort kit: what seasoned travellers actually pack",
-    "description": "A long-haul flight comfort kit that actually works: what seasoned Australian travellers pack for 15+ hour flights, and why it matters.",
-    "author": {
-      "@type": "Organization",
-      "name": "PandaBare"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "PandaBare",
-      "url": "https://pandabare.me"
-    },
-    "datePublished": "2026-07-05",
-    "dateModified": "2026-07-05",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://pandabare.me/guides/long-haul-flight-comfort-kit"
-    }
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What should I pack in a long-haul flight comfort kit?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Pack breathable socks, a sleep mask, a small pouch to keep it all together, lip balm and moisturiser for dry cabin air, a refillable water bottle, and layers you can add or remove. The goal is comfort and hygiene in a small, repeatable kit, not a suitcase of gadgets."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Why is the air on a plane so dry?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Cabin air is drawn from outside at cruising altitude, where humidity is near zero, then repressurised without adding much moisture back in. Most aircraft cabins sit around 10 to 20 percent humidity, well below the 30 to 50 percent recommended for homes, which is why skin, eyes and sinuses feel dry on long flights."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do compression socks actually help on long flights?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Clinical research shows graduated compression stockings reduce ankle swelling and lower the risk of symptomless deep vein thrombosis on flights over four hours. If you are not using medical-grade compression, breathable socks that do not dig into your ankle still help with comfort and airflow over a long sitting stretch."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How do I deal with jet lag on a long-haul flight from Australia?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Shift your sleep schedule slightly in the days before you fly, stay hydrated and limit alcohol on board, then set your watch to destination time and get outside for daylight as soon as you land. Most people need roughly one day of recovery per time zone crossed."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is the one item worth buying before a long-haul flight?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "A proper sleep mask that fully blocks light, paired with warm, breathable socks. Cabins get cold once the cabin crew dim the lights, and cold feet combined with light exposure are two of the easiest things to fix with the right small items."
-        }
-      }
-    ]
-  }
-  </script>
 ---
 
 # Long-haul flight comfort kit: what seasoned travellers actually pack
@@ -119,7 +41,6 @@ Here's a checklist broken down by category, built around what actually changes h
 |---|---|---|
 | Comfort | Bamboo crew or ankle socks | Cabins run cold once the lights dim; breathable natural fibre regulates temperature better than synthetic blends |
 | Comfort | Sleep mask | Blocks cabin lighting and other passengers' screens, a prerequisite for any real sleep |
-| Comfort | Sport wristband | Useful for wiping condensation, cabin dust or a stray sneeze without hunting for tissues |
 | Hygiene | Travel pouch | Keeps socks, mask and small items together and out of your bag's main compartment |
 | Hygiene | Hand sanitiser, wipes | [Recommended for keeping high-touch tray tables and seat areas clean](https://www.flightcentre.com.au/window-seat/40-best-travel-must-haves-according-flight-centre-travel-experts) |
 | Health | Refillable water bottle | Aerospace medicine guidance suggests roughly [250ml of water per hour in the air](https://www.aircharternetwork.com.au/blog/long-haul-flight-essentials/) |
@@ -178,9 +99,7 @@ As a rough rule, expect about one day of recovery for every time zone you cross.
 
 The travellers who find long-haul flights the least miserable tend to have one thing in common: they don't rebuild their kit from scratch every trip.
 
-They keep a small set of the same items, ready to go, in the same pouch. Socks that don't need thinking about. A mask that already fits. A wristband that's just there when you need it. It sits in the same spot in the carry-on, every time.
-
-That's the idea behind the [PandaBare Comfort Kit](/comfort-kit): bamboo crew or ankle socks, a sleep mask, and a sport wristband, packed into a [travel pouch](/products/travel-pouch) sized to fit in a day bag without a second thought. Not a gadget list. Just the handful of things that make a 15-hour flight feel like a normal Tuesday rather than an ordeal, ready before you've even started thinking about what to pack.
+They keep a small set of the same items, ready to go, in the same pouch. Socks that don't need thinking about. A mask that already fits. It sits in the same spot in the carry-on, every time.
 
 ## FAQ
 
@@ -200,5 +119,3 @@ Shift your sleep schedule slightly in the days before you fly, stay hydrated and
 A proper sleep mask that fully blocks light, paired with warm, breathable socks. Cabins get cold once the lights dim, and cold feet combined with light exposure are two of the easiest things to fix with the right small items.
 
 ---
-
-GENERATION PROMPT (not yet generated): soft, tactile, premium style photograph, linen and warm off-white tones, bamboo as accent only, no cartoon pandas, no fake-looking product renders, natural light. A neat travel pouch, unzipped, with a folded pair of bamboo socks, a sleep mask and a wristband laid out beside it on an aircraft tray table or a linen surface. Calm, quiet styling, no visible branding or logos, shot from a slight overhead angle.

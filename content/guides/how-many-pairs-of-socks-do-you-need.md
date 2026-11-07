@@ -6,7 +6,7 @@ meta_description: How many pairs of socks do you actually need? Most people need
 primary_keyword: how many pairs of socks do you need
 secondary_keywords: [minimalist sock wardrobe, how many socks should I own, sock drawer capsule wardrobe, quick-dry socks Australia, how often to do laundry Australia]
 cluster: B - socks and feet
-internal_links: [/guides/how-to-wash-bamboo-socks, /guides/are-bamboo-socks-better-than-cotton, /guides/crew-vs-ankle-socks, /guides/bamboo-socks-australia-buyers-guide]
+internal_links: ["/guides/are-bamboo-socks-better-than-cotton", "/guides/crew-vs-ankle-socks", "/guides/how-to-wash-bamboo-socks", "/guides/bamboo-socks-australia-buyers-guide", "/products/crew-sock/"]
 hero_image:
   filename: assets/hero-socks-wristband.jpg
   alt: Folded bamboo socks stacked in a drawer as part of a minimalist sock wardrobe
@@ -144,7 +144,7 @@ Capsule wardrobe guides usually treat socks and underwear separately from the "c
 
 For travel specifically, most minimalist packing guides suggest 3 to 5 pairs for a week-long trip, on the logic that you can hand-wash or find a laundromat if needed. That works for a short holiday. It works less well for the average Australian household juggling school, gym and work in the same week, where 7 to 10 pairs at home is more realistic.
 
-If you're packing for a flight, a small dedicated travel set (kept in a [travel pouch](/products/travel-pouch) so it's always ready to grab) removes the guesswork entirely.
+If you're packing for a flight, a small dedicated travel set (kept in a travel pouch so it's always ready to grab) removes the guesswork entirely.
 
 ![Relaxed morning at home in bamboo socks with coffee, slow-living sock wardrobe](assets/lifestyle-coffee.jpg)
 
@@ -166,7 +166,7 @@ If you're deciding between materials for your everyday rotation, it's worth comp
 
 Whatever you land on, [washing them properly](/guides/how-to-wash-bamboo-socks) will do more for your sock count than buying more pairs ever will. A well-cared-for rotation of 8 to 10 pairs will comfortably outlast a neglected drawer of 20.
 
-For a simple starting point, our [bamboo socks buyers guide for Australia](/guides/bamboo-socks-australia-buyers-guide) walks through picking your first rotation from scratch. If you'd rather skip the decision-making entirely, a set of [bamboo crew socks](/products/bamboo-crew-socks) in one style is the easiest way to build a matching, low-maintenance drawer in one go.
+For a simple starting point, our [bamboo socks buyers guide for Australia](/guides/bamboo-socks-australia-buyers-guide) walks through picking your first rotation from scratch. If you'd rather skip the decision-making entirely, a set of [bamboo crew socks](/products/crew-sock/) in one style is the easiest way to build a matching, low-maintenance drawer in one go.
 
 ## FAQ
 

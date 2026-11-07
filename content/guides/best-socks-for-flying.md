@@ -11,11 +11,7 @@ secondary_keywords:
   - "do you need compression socks on a plane"
   - "bamboo socks for travel"
 cluster: "D - travel"
-internal_links:
-  - /guides/long-haul-flight-comfort-kit
-  - /guides/how-to-sleep-on-a-plane-economy
-  - /guides/carry-on-essentials-australian-travellers-2026
-  - /guides/best-socks-for-sweaty-feet
+internal_links: ["/products/crew-sock/", "/products/ankle-hugger/", "/guides/how-to-sleep-on-a-plane-economy", "/guides/carry-on-essentials-australian-travellers-2026", "/guides/why-bamboo-feels-cooler-warmer", "/guides/best-socks-for-sweaty-feet", "/guides/long-haul-flight-comfort-kit"]
 hero_image:
   filename: assets/hero-socks-wristband.jpg
   alt: "Soft bamboo crew socks and travel accessories laid out for a long-haul flight"
@@ -77,7 +73,7 @@ schema: |
         "name": "Are bamboo socks good for flying?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Bamboo socks are a good everyday choice for flying because the fibre is breathable and manages moisture well over a long, seated day. They are not a substitute for medical compression stockings if you are in a higher-risk group, but for general comfort and reduced foot swelling, they work well."
+          "text": "Bamboo socks are an everyday sock option. Compare the fit and care details of the specific product; this guide does not establish a swelling-reduction benefit."
         }
       },
       {
@@ -164,12 +160,12 @@ None of this replaces medical compression for someone who needs it. But for the 
 
 | | Graduated compression socks | Breathable bamboo socks |
 |---|---|---|
-| **What they do** | Apply graduated pressure (tighter at ankle, looser up the leg) to support venous blood flow | Wick moisture, regulate temperature, avoid tight bands that restrict circulation |
-| **Best for** | Travellers with DVT history, recent surgery, pregnancy, clotting disorders, or those wanting extra swelling protection on very long sectors | Healthy travellers focused on general comfort, sweat and swelling management on long-haul flights |
-| **Evidence base** | High-certainty evidence for reduced asymptomatic DVT and swelling on flights over 4 hours ([Cochrane](https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD004002.pub4/full)) | General comfort and moisture-wicking benefit; not tested as a DVT-prevention intervention |
-| **Fit needed** | Correct graduated compression grade, properly measured, ideally GP-advised for at-risk travellers | Relaxed, non-restrictive fit at ankle and calf |
+| **What they do** | Apply graduated pressure (tighter at ankle, looser up the leg) to support venous blood flow | Everyday sock option; check product-specific fit and fabric details |
+| **Best for** | Travellers with DVT history, recent surgery, pregnancy, clotting disorders, or those wanting extra swelling protection on very long sectors | Everyday use, selected according to product fit and intended use |
+| **Evidence base** | High-certainty evidence for reduced asymptomatic DVT and swelling on flights over 4 hours ([Cochrane](https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD004002.pub4/full)) | This guide establishes no swelling-reduction or DVT-prevention benefit for these everyday socks |
+| **Fit needed** | Correct graduated compression grade, properly measured, ideally GP-advised for at-risk travellers | Confirm the specific product's size and cuff details before buying |
 | **Where to buy** | Pharmacy or medical supply, fitted to your measurements | Everyday travel and lifestyle stores |
-| **PandaBare offering** | Not sold, by design: this is a medical product that needs proper fitting | [Bamboo crew socks](/products/bamboo-crew-socks) and [bamboo ankle socks](/products/bamboo-ankle-socks) |
+| **PandaBare offering** | Not listed in the current shop | [Bamboo crew socks](/products/crew-sock/) and [bamboo ankle socks](/products/ankle-hugger/) |
 
 ## What to pack instead of relying on socks alone
 
@@ -178,9 +174,7 @@ Sock choice is one part of a long-haul comfort routine, not the whole strategy. 
 - **Move every one to two hours.** Walk the aisle, do a few calf raises at your seat.
 - **Stay hydrated**, and go easy on alcohol, which does not help and does not hurt directly per the DVT research, but does dehydrate you and disrupt sleep.
 - **Layer for temperature swings.** Cabins run cold at cruise and warm during boarding.
-- **Pack a few comfort essentials together** so you are not digging through carry-on at 3am cabin lights: socks, a sleep mask, and something for your wrists if you tend to swell there too.
-
-This is exactly what we built the [PandaBare Comfort Kit](/comfort-kit) for: a curated set that pairs [bamboo crew socks](/products/bamboo-crew-socks), a [sleep mask](/products/sleep-mask) and a [travel pouch](/products/travel-pouch) so the whole in-flight routine is sorted before you board, not assembled from four different amazon orders the week before.
+- **Pack a few comfort essentials together** so you are not digging through carry-on at 3am cabin lights: socks and a sleep mask.
 
 For the sleep side of a long flight, our guide on [how to sleep on a plane in economy](/guides/how-to-sleep-on-a-plane-economy) goes further into positioning, timing and what actually helps you land closer to your destination time zone. And if you are still packing, the [carry-on essentials guide for Australian travellers](/guides/carry-on-essentials-australian-travellers-2026) covers what is worth the space in your bag.
 
@@ -203,7 +197,7 @@ Most healthy travellers do not need medical-grade compression socks, even on lon
 For healthy travellers, symptomatic DVT on flights over six to eight hours affects roughly 2 to 5 people per 10,000, based on research reviewed by vascular and travel health bodies. Risk rises with immobility, age, obesity, pregnancy, recent surgery, or a personal or family history of clots.
 
 **Are bamboo socks good for flying?**
-Bamboo socks are a solid everyday choice for flying because the fibre is breathable and manages moisture well over a long, seated day. They are not a substitute for medical compression stockings if you are in a higher-risk group, but for general comfort and reduced foot swelling, they work well.
+Bamboo socks are an everyday sock option. Compare the fit and care details of the specific product; this guide does not establish a swelling-reduction benefit.
 
 **Can wearing tight socks on a plane be a problem?**
 Yes. Non-graduated socks with a tight band at the ankle or calf can restrict circulation rather than help it. Look for a relaxed cuff that does not leave a deep mark on your skin after a few hours seated.

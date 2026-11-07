@@ -11,13 +11,7 @@ secondary_keywords:
   - blackout sleep mask Australia
   - sleep mask for shift workers
 cluster: C - sleep
-internal_links:
-  - /guides/do-sleep-masks-actually-improve-sleep
-  - /guides/how-to-sleep-better-in-australian-summer
-  - /guides/15-minute-wind-down-routine
-  - /guides/long-haul-flight-comfort-kit
-  - /products/sleep-mask
-  - /comfort-kit
+internal_links: ["/guides/do-sleep-masks-actually-improve-sleep", "/guides/15-minute-wind-down-routine", "/guides/how-to-sleep-better-in-australian-summer"]
 hero_image:
   filename: sleep-mask-fit-fabric-hero.jpg
   alt: Soft contoured sleep mask resting on a linen pillow in warm morning light
@@ -121,8 +115,6 @@ It also matters if you wear lash extensions or just have sensitive eyes, since c
 
 Flat masks aren't bad. They're lighter, cheaper, and fine for a quick nap or a back sleeper who doesn't move much. But if you sleep on your side or want a mask you can wear for a full eight hours, contoured wins.
 
-[GENERATION PROMPT (not yet generated): A close, tactile studio-style photo of a soft contoured sleep mask, eye cups gently domed, resting on rumpled warm off-white linen. Bamboo leaf or bamboo-fibre swing tag visible as a small accent detail only, not the focus. Natural window light from the side, soft shadows, no cartoon pandas, no glossy product-render look, calm and premium styling. Filename: sleep-mask-contour-detail.jpg]
-
 ## What is the best fabric for a sleep mask?
 
 Fabric decides two things: how your skin feels by 3am, and how much heat builds up around your eyes.
@@ -145,8 +137,6 @@ Two things drive real light-blocking:
 2. **Fit at the edges.** Most light leak happens at the nose bridge and temples, not through the fabric itself. A mask that curves down to meet the bridge of your nose, rather than sitting flat and leaving a gap, stops that leak. Contoured masks tend to do this better because the shape is built around the face rather than draped over it.
 
 This matters more in Australia than people expect. Summer daylight can stretch past 8pm in southern states, and anyone sleeping during the day, shift workers especially, is fighting a body clock that reads daylight as a signal to wake up. Melatonin, the hormone that helps you fall and stay asleep, is suppressed by light exposure and rises in darkness, which the [Sleep Health Foundation](https://www.sleephealthfoundation.org.au/sleep-disorders/melatonin) describes as why it's sometimes called the hormone of darkness. A mask that actually blocks light is doing real work here, not just a comfort prop.
-
-[GENERATION PROMPT (not yet generated, or use assets/lifestyle-coffee.jpg as a placeholder): A calm, softly lit morning scene on a linen-covered surface: a folded sleep mask sits beside a warm coffee cup, natural light through a window, muted off-white and warm neutral tones, no branding, no people's faces, quiet and unstyled feel. Filename: sleep-mask-lifestyle-coffee.jpg]
 
 ## What else should you check before buying a sleep mask?
 
@@ -189,9 +179,5 @@ Aim for once a week if you wear it nightly, similar to a pillowcase. Oils, skinc
 Yes. Long summer daylight hours and daytime sleep after night shifts both mean fighting light your body reads as a signal to stay awake. A well-fitted mask blocks that light without needing blackout curtains or a darkened room.
 
 ## Where this fits
-
-We designed the [PandaBare sleep mask](/products/sleep-mask) around this exact checklist: a gently contoured fit, a breathable bamboo-blend fabric, and a snug adjustable strap that seals at the nose bridge without pulling on your hair. It's built for a full night, not just a nap.
-
-If you're setting up for better sleep or travel more broadly, it's also one of the pieces in the [PandaBare Comfort Kit](/comfort-kit), alongside socks and a travel pouch. If you're often sleeping somewhere that isn't your own dark bedroom, whether that's a long-haul flight or a share house with a housemate's hallway light, our [long-haul flight comfort kit](/guides/long-haul-flight-comfort-kit) guide covers the rest of what's worth packing.
 
 That closes out this part of the series. Fit, fabric and blackout: get those three right, and the rest of a good night's sleep has a much better chance.

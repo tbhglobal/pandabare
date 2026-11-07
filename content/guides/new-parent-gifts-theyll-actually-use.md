@@ -11,11 +11,7 @@ secondary_keywords:
   - what to get new parents instead of baby clothes
   - new dad gifts Australia
 cluster: E - gifting
-internal_links:
-  - /guides/thoughtful-gifts-under-50
-  - /guides/best-bed-socks-for-cold-feet
-  - /guides/do-sleep-masks-actually-improve-sleep
-  - /guides/15-minute-wind-down-routine
+internal_links: ["/products/crew-sock/", "/products/ankle-hugger/", "/guides/thoughtful-gifts-under-50", "/guides/do-sleep-masks-actually-improve-sleep", "/guides/best-bed-socks-for-cold-feet", "/guides/15-minute-wind-down-routine"]
 hero_image:
   filename: assets/lifestyle-coffee.jpg
   alt: New parent gift idea, bamboo socks and a warm coffee in a quiet morning moment
@@ -113,19 +109,16 @@ The people who actually need a gift right now are the two adults who haven't sle
 
 [Nemours KidsHealth](https://kidshealth.org/en/parents/sleepnewborn.html) notes newborns typically wake two to three times a night in the first months to feed, and that pattern usually starts easing between one and three months, with longer night stretches becoming more regular around three months. There's no fixed number that applies to every baby, but the broad pattern (frequent waking, gradual improvement) is well established.
 
-That's the real gap a gift can fill: not more nursery gear, but something that makes 3am a little softer for the parent standing in it. This is where PandaBare's [comfort kit](/comfort-kit) and gift sets fit, they're built for disrupted sleep and cold feet, not for the baby at all.
-
 ## What are new parents actually dealing with, and what helps
 
 Before you buy, it helps to think about which part of early parenthood you're gifting for. A general hamper often duplicates what they already have. A targeted gift usually gets used.
 
 | What they're dealing with | Why it's hard | A gift that actually helps |
 |---|---|---|
-| Cold feet during night feeds | Sitting still in a cold room for 20 to 40 minutes, several times a night | [Bamboo crew socks](/products/bamboo-crew-socks) or [ankle socks](/products/bamboo-ankle-socks), breathable enough for indoors, warm enough for a cold hallway at 2am |
-| Daytime naps that never come easily | Baby sleeps in short bursts, so any rest has to happen fast, often with daylight streaming in | A [sleep mask](/products/sleep-mask) built to block light quickly for a 20-minute nap |
-| Hospital bag or early days at home | Packing lists focus on the baby, parents forget their own comfort items | A [travel pouch](/products/travel-pouch) with a change of socks, a mask, and small comfort items ready to grab |
+| Cold feet during night feeds | Sitting still in a cold room for 20 to 40 minutes, several times a night | [Bamboo crew socks](/products/crew-sock/) or [ankle socks](/products/ankle-hugger/), breathable enough for indoors, warm enough for a cold hallway at 2am |
+| Daytime naps that never come easily | Baby sleeps in short bursts, so any rest has to happen fast, often with daylight streaming in | A sleep mask built to block light quickly for a 20-minute nap |
+| Hospital bag or early days at home | Packing lists focus on the baby, parents forget their own comfort items | A travel pouch with a change of socks, a mask, and small comfort items ready to grab |
 | Meals and mental load | Cooking is the first thing to drop when sleep is short | A meal train contribution or grocery voucher, paired with a small comfort item so it doesn't feel purely transactional |
-| Return to work or family visits | Non-birthing parents and returning parents also run on broken sleep | A [PandaBare comfort kit](/comfort-kit) or small [gift pack](/gift-packs), useful for either parent, not gendered to "mum only" |
 
 If you're stuck on how much to spend, our guide to [thoughtful gifts under $50](/guides/thoughtful-gifts-under-50) has options that scale from a small token to a proper set.
 
@@ -161,11 +154,9 @@ Keep it small and specific rather than building a large themed hamper. Two or th
 
 A simple, low-effort combination that works well:
 
-1. A pair of [bamboo crew socks](/products/bamboo-crew-socks) for cold feet during feeds
-2. A [sleep mask](/products/sleep-mask) for grabbing rest whenever it comes
+1. A pair of [bamboo crew socks](/products/crew-sock/) for cold feet during feeds
+2. A sleep mask for grabbing rest whenever it comes
 3. A short, handwritten note offering one concrete thing (a meal, an hour of minding the baby, a load of washing)
-
-If you'd rather hand over one ready-made option, the [PandaBare comfort kit](/comfort-kit) bundles the sleep and comfort essentials together, and it's built to be genuinely useful rather than decorative. For workplaces sending something to a colleague on leave, [corporate gifting](/corporate-gifting) sets work well without feeling impersonal.
 
 If you want to understand why a sleep mask specifically helps with the kind of broken, snatched sleep new parents get, our guide on [whether sleep masks actually improve sleep](/guides/do-sleep-masks-actually-improve-sleep) goes into the detail. For cold feet more broadly, see our guide to [the best bed socks for cold feet](/guides/best-bed-socks-for-cold-feet).
 

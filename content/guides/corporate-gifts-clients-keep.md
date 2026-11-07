@@ -11,12 +11,7 @@ secondary_keywords:
   - "are client gifts tax deductible"
   - "bulk corporate gifting Australia"
 cluster: "E - gifting"
-internal_links:
-  - /corporate-gifting
-  - /guides/thoughtful-gifts-under-50
-  - /guides/gifts-for-people-who-have-everything
-  - /guides/christmas-stocking-fillers-not-landfill
-  - /guides/long-haul-flight-comfort-kit
+internal_links: ["/products/crew-sock/", "/guides/thoughtful-gifts-under-50", "/guides/gifts-for-people-who-have-everything", "/corporate/", "/guides/christmas-stocking-fillers-not-landfill", "/guides/long-haul-flight-comfort-kit", "/guides/crew-vs-ankle-socks"]
 hero_image:
   filename: assets/hero-socks-wristband.jpg
   alt: "Bamboo sock and wristband corporate gift set styled for Australian business gifting"
@@ -120,7 +115,7 @@ The fix is simple. Give something that would earn a place in someone's home or t
 
 The gifts that survive past the unboxing moment share three traits: they are useful daily or weekly, they feel considered rather than mass-produced, and the branding is restrained.
 
-Comfort essentials tick all three. A pair of [bamboo crew socks](/products/bamboo-crew-socks), a [sleep mask](/products/sleep-mask) for frequent flyers, or a [travel pouch](/products/travel-pouch) packed with small essentials all get used long after a stress ball has been binned.
+Comfort essentials tick all three. A pair of [bamboo crew socks](/products/crew-sock/), a sleep mask for frequent flyers, or a travel pouch packed with small essentials all get used long after a stress ball has been binned.
 
 If you are shortlisting ideas beyond your own client base, our guide to [thoughtful gifts under $50](/guides/thoughtful-gifts-under-50) and [gifts for people who have everything](/guides/gifts-for-people-who-have-everything) both apply well to corporate recipients, since executives and senior clients are exactly the audience those guides are written for.
 
@@ -128,13 +123,15 @@ If you are shortlisting ideas beyond your own client base, our guide to [thought
 
 Budgets vary by relationship and occasion, but most Australian businesses work within a fairly consistent range. Here is a practical breakdown by common gifting moment.
 
-| Occasion | Typical budget (AUD) | What tends to land well |
-|---|---|---|
-| New client onboarding | $25 to $45 | A single comfort item: bamboo ankle socks or a sport wristband, branded subtly, sent with a short welcome note |
-| Client thank-you (project close, referral) | $40 to $70 | A curated set like the [PandaBare Comfort Kit](/comfort-kit), pairing socks with a sleep mask or travel pouch |
-| EOFY client appreciation | $50 to $90 | A [gift pack](/gift-packs) that reads as a genuine thank-you rather than a tax-time formality |
-| Conference or event swag | $10 to $25 per attendee | Bamboo ankle socks or wristbands in bulk, useful enough to keep beyond the day |
-| Key account, end-of-year | $80 to $150 | A full comfort kit or custom bulk order via [corporate gifting](/corporate-gifting), with light co-branding |
+| Planning question | What to confirm before ordering |
+|---|---|
+| Products and people | Which current products, colours and quantities suit the recipients? |
+| Budget | What is the full cost including delivery and any requested presentation? |
+| Delivery | Which postcodes and locations are involved? |
+| Timing | What date is required, and can the supplier confirm availability and delivery arrangements? |
+| Presentation | Are packaging or branding requests possible, and what would they cost? |
+
+PandaBare's [team and client enquiry page](/corporate/) is the place to ask about these details. Bulk prices, custom packaging and delivery dates require confirmation; they are not established by the examples in this guide.
 
 These are guides, not rules. A $35 gift that solves a real problem will usually outperform a $100 item that feels generic.
 
@@ -158,7 +155,7 @@ Two windows dominate Australian business gifting: Christmas (which falls in summ
 
 Christmas is the most common gifting moment, but it is also the most crowded. Your gift arrives alongside a dozen others on the same desk in the same week. EOFY, by contrast, is a genuinely underused window: it lands mid-year, avoids the December pile-up, and pairs naturally with a "thank you for the year so far" message rather than a generic holiday card.
 
-A third option worth considering is milestone-based gifting: sending something when a project wraps, a contract renews, or a referral comes through. These moments carry more personal weight than a calendar date, and a well-timed comfort gift (a [sleep mask](/products/sleep-mask) after a big travel-heavy project, for instance) reads as considered rather than automatic.
+A third option worth considering is milestone-based gifting: sending something when a project wraps, a contract renews, or a referral comes through. These moments carry more personal weight than a calendar date, and a well-timed comfort gift (a sleep mask after a big travel-heavy project, for instance) reads as considered rather than automatic.
 
 If your client base travels frequently for work, our guide to [long-haul flight comfort kits](/guides/long-haul-flight-comfort-kit) is a useful reference for building a travel-focused gift that a busy client will genuinely use.
 
@@ -170,13 +167,11 @@ In general terms, the distinction that matters is entertainment versus non-enter
 
 None of this is tax advice, and it should not be treated as a final answer for your business. Keep your receipts, note down why the gift relates to generating future income, and confirm your specific position with your accountant or the current ATO guidance before you claim anything.
 
-## How PandaBare approaches corporate gifting
+## Enquire about a PandaBare team or client order
 
-PandaBare's [corporate gifting](/corporate-gifting) service is built around the same idea running through this whole guide: give something a client will actually use.
+For a PandaBare team or client order, use the [enquiry page](/corporate/) to ask about the products, quantities, costs and timing you need.
 
-Bamboo crew and [ankle socks](/products/bamboo-ankle-socks), [sport wristbands](/products/sport-wristbands), sleep masks and travel pouches can be ordered in bulk, packed as a [Comfort Kit](/comfort-kit) or [gift pack](/gift-packs), and lightly branded without turning the item into a walking billboard. Minimum order quantities, turnaround times and co-branding options are handled directly through the corporate gifting page, which is the fastest way to get a quote for an onboarding run, an EOFY thank-you, or a conference giveaway.
-
-If you are choosing between sock styles for a bulk order, it is worth a quick read of [crew vs ankle socks](/guides/crew-vs-ankle-socks) first, since the right fit varies by how the socks will actually be worn, in an office, on a flight, or around the house.
+If you are choosing between sock styles for a team or client order, it is worth a quick read of [crew vs ankle socks](/guides/crew-vs-ankle-socks) first, since the right fit varies by how the socks will actually be worn, in an office, on a flight, or around the house.
 
 ## FAQ
 
@@ -196,5 +191,3 @@ Branded merchandise works best when the item itself has value beyond the logo. A
 Most Australian businesses sit somewhere between $20 and $150 per client gift, depending on the relationship and occasion. A thoughtful $40 to $60 comfort-focused gift often reads as more considered than a $100 item with a heavy branding footprint.
 
 ---
-
-*GENERATION PROMPT (not yet generated): A soft, tactile, premium flat-lay style photograph of a neat row of matching corporate gift boxes ready for dispatch, in linen and warm off-white tones, with bamboo used only as a subtle accent (a small sprig or woven detail, not a literal plant motif), natural daylight from the side, calm and uncluttered styling on a plain timber or linen surface, no cartoon pandas, no fake-looking 3D product renders, no visible brand logos or AI-tool watermarks in the frame.*
