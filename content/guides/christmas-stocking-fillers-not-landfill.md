@@ -11,14 +11,7 @@ secondary_keywords:
   - stocking fillers under $20 Australia
   - Christmas gifts people actually use
 cluster: E - gifting
-internal_links:
-  - /guides/thoughtful-gifts-under-50
-  - /guides/gifts-for-people-who-have-everything
-  - /guides/corporate-gifts-clients-keep
-  - /guides/new-parent-gifts-theyll-actually-use
-  - /products/bamboo-ankle-socks
-  - /products/sport-wristbands
-  - /comfort-kit
+internal_links: ["/products/ankle-hugger/", "/products/crew-sock/", "/products/wristy/", "/gift-packs/", "/guides/thoughtful-gifts-under-50", "/guides/gifts-for-people-who-have-everything", "/guides/why-bamboo-feels-cooler-warmer", "/guides/corporate-gifts-clients-keep", "/corporate/", "/guides/how-many-pairs-of-socks-do-you-need", "/guides/carry-on-essentials-australian-travellers-2026"]
 hero_image:
   filename: assets/hero-socks-wristband.jpg
   alt: Bamboo socks and wristband styled as Christmas stocking fillers on a linen background
@@ -122,16 +115,13 @@ The best stocking fillers are usually things people already buy for themselves b
 
 Here's a practical spread, organised by who you're buying for and what it costs.
 
-| Recipient | Idea | Approx. price (AUD) | Why it lasts past Boxing Day |
-|---|---|---|---|
-| Dad or father figure | [Bamboo ankle socks](/products/bamboo-ankle-socks), 2 pairs | $25 to $35 | Breathable in summer heat, works with joggers or boat shoes, replaces the socks he won't buy himself |
-| Teenager or young adult | [Sport wristband](/products/sport-wristbands) set | $15 to $22 | Actually used at the gym, on a run, or at the beach, not a drawer item |
-| Mum or partner | Sleep mask | $20 to $30 | Useful every night, especially through daylight-saving summer mornings |
-| Frequent flyer | Travel pouch | $18 to $28 | Organises cables, chargers, or toiletries in a carry-on, used on every trip |
-| Colleague or Secret Santa | Single pair bamboo crew socks | $12 to $18 | Universally useful, no sizing guesswork beyond shoe size |
-| Grandparent | Bamboo crew socks, soft finish | $15 to $20 | Gentle on skin, warm-weather breathable, easy to wear around the house |
-| Someone who has everything | [PandaBare Comfort Kit](/comfort-kit) | $45 to $65 | Curated small set (socks, mask, pouch) so no single item feels like a token gift |
-| Kids or teens | Ankle socks in a fun colourway | $10 to $15 | Genuinely worn to school or sport, not a stocking-only item |
+| Current PandaBare option | Product price (AUD) | What to check |
+|---|---|---|
+| [Ankle Hugger](/products/ankle-hugger/) | A$15.95 | Choose colour and available Small or Large size |
+| [Bamboo Crew Sock](/products/crew-sock/) | A$17.95 | Choose colour and confirm the recipient's fit requirements |
+| [Wristy](/products/wristy/) | A$12.95 | Choose colour and confirm wrist fit if needed |
+
+Products are sold individually. Add A$10 Australian delivery below a A$50 subtotal; delivery is free at A$50 or more. Use the [current gift ideas](/gift-packs/) to compare basket totals before you choose.
 
 If you're stuck on a bigger stocking or a whole gift bundle, our guide to [thoughtful gifts under $50](/guides/thoughtful-gifts-under-50) has more ideas at this exact price bracket, and [gifts for people who have everything](/guides/gifts-for-people-who-have-everything) covers the trickier recipients on your list.
 
@@ -166,13 +156,11 @@ If Boxing Day sales are on your radar too, this is also a good moment to stock u
 
 There's no rule, but most Australian shoppers land somewhere between $5 and $30 per item, with $10 to $20 covering the bulk of genuinely well-made options. Spending slightly more on one item that lasts beats spending the same total on three throwaway ones.
 
-A single pair of quality bamboo socks at $15 does more long-term work than three $5 novelty items that get forgotten by New Year. If you're buying for a whole family, a small curated set like the [Comfort Kit](/comfort-kit) can also work out cheaper per person than several individual stockings.
-
 ## What about corporate stockings or client gifts
 
 If you're sorting small Christmas gifts for staff or clients rather than family, the same logic applies, just with a slightly higher bar for presentation. Novelty branded items tend to get binned within the office clean-out week. Comfort items with genuine daily use tend to get kept on desks or taken home.
 
-Our guide to [corporate gifts clients keep](/guides/corporate-gifts-clients-keep) goes into this in more detail, and PandaBare's [corporate gifting](/corporate-gifting) range is built specifically around small, useful items that suit a stocking-sized budget per person.
+Our guide to [corporate gifts clients keep](/guides/corporate-gifts-clients-keep) covers planning questions. For PandaBare team or client orders, [enquire about products, quantities and costs](/corporate/) before ordering.
 
 ## When do you need to order to get stocking fillers by Christmas in Australia
 
@@ -184,7 +172,7 @@ For online orders from smaller brands, it's worth checking the retailer's own sh
 
 If the person on your list already owns plenty of socks, the fix isn't to avoid socks altogether, it's to give better ones. Our guide on [how many pairs of socks you actually need](/guides/how-many-pairs-of-socks-do-you-need) makes the case that most people are still wearing worn-out pairs long after they should have replaced them, which makes a good pair a genuinely welcome gift rather than a filler-for-filler's-sake choice.
 
-For anyone travelling over the summer break, pairing socks with a [travel pouch](/products/travel-pouch) or checking our [carry-on essentials guide](/guides/carry-on-essentials-australian-travellers-2026) rounds out a stocking with things they'll actually use on the flight, not just at home.
+For anyone travelling over the summer break, pairing socks with a travel pouch or checking our [carry-on essentials guide](/guides/carry-on-essentials-australian-travellers-2026) rounds out a stocking with things they'll actually use on the flight, not just at home.
 
 ## FAQ
 

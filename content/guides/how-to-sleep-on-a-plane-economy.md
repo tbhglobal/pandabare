@@ -11,11 +11,7 @@ secondary_keywords:
   - melatonin for flights
   - sleep on overnight flight economy
 cluster: D - travel
-internal_links:
-  - /guides/long-haul-flight-comfort-kit
-  - /guides/best-socks-for-flying
-  - /guides/what-to-look-for-in-a-sleep-mask
-  - /guides/carry-on-essentials-australian-travellers-2026
+internal_links: ["/guides/carry-on-essentials-australian-travellers-2026", "/guides/long-haul-flight-comfort-kit"]
 hero_image:
   filename: assets/hero-socks-wristband.jpg
   alt: Bamboo socks and wristband set styled for travel, resting on a neutral linen background
@@ -163,11 +159,9 @@ On a **daytime flight** (common on Australia-US west coast routes), don't fight 
 
 Either way, the goal for the flight itself is the same: reduce the number of disruptions, keep your body temperature and light exposure steady, and accept that light, broken sleep is a genuine win in economy.
 
-## A realistic economy sleep kit
+## More packing ideas
 
-You don't need much to noticeably improve a long-haul flight. The essentials that make the biggest difference are the ones addressing light, temperature and neck support directly: a well-fitted sleep mask that blocks light from the sides and nose bridge, warm bamboo socks for cold cabin air (a common but underrated cause of restlessness), and a compact travel pouch to keep it all within reach rather than buried in your bag. A [PandaBare comfort kit](/comfort-kit) bundles these together, which is exactly the kind of low-effort packing decision that pays off somewhere over the Indian Ocean at 2am.
-
-If you're building your own carry-on setup rather than starting from a kit, our guide to [carry-on essentials for Australian travellers](/guides/carry-on-essentials-australian-travellers-2026) covers what's worth packing beyond sleep gear, and our [long-haul flight comfort kit guide](/guides/long-haul-flight-comfort-kit) goes deeper into building a kit for your specific route and season.
+For more packing ideas, read our [carry-on essentials guide for Australian travellers](/guides/carry-on-essentials-australian-travellers-2026) and [long-haul packing guide](/guides/long-haul-flight-comfort-kit).
 
 ## FAQ
 

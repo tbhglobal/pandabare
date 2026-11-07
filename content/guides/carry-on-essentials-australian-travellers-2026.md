@@ -11,11 +11,7 @@ secondary_keywords:
   - carry-on bag size 56x36x23
   - domestic flight liquids rules Australia
 cluster: D - travel
-internal_links:
-  - /guides/long-haul-flight-comfort-kit
-  - /guides/how-to-sleep-on-a-plane-economy
-  - /guides/best-socks-for-flying
-  - /comfort-kit
+internal_links: ["/guides/how-to-sleep-on-a-plane-economy", "/guides/long-haul-flight-comfort-kit", "/guides/best-socks-for-flying", "/products/ankle-hugger/", "/products/crew-sock/"]
 hero_image:
   filename: assets/hero-socks-wristband.jpg
   alt: Bamboo socks and wristband styled with travel essentials, ready for a carry-on
@@ -144,8 +140,6 @@ A good carry-on splits into four categories: documents, comfort, tech and health
 - **Tech:** phone charger and cable, a spare power bank (max two per person, and note that from 15 December 2025 power banks cannot be used or charged on board, so keep them switched off in flight), headphones, an e-reader or downloaded entertainment.
 - **Health:** any prescription medication in original packaging with a doctor's letter if travelling internationally, hand sanitiser under 100ml, panadol or equivalent, any allergy medication.
 
-If you want a shortcut, PandaBare's [Comfort Kit](/comfort-kit) bundles the sleep-and-travel comfort layer, a sleep mask, socks and a compact pouch, into one grab-and-go pack, so you're not assembling this list from scratch every trip.
-
 ## How should you pack a carry-on so it's actually comfortable to use mid-flight?
 
 Pack in the order you'll need things, in reverse. What you want last goes in first.
@@ -155,7 +149,7 @@ Pack in the order you'll need things, in reverse. What you want last goes in fir
 3. Documents and your phone charger stay in the outer pocket or your personal item, not buried in the main bag.
 4. Liquids bag goes somewhere you can pull out fast at security without unpacking everything else.
 
-A dedicated [travel pouch](/products/travel-pouch) earns its space here. Loose items rattling around the bottom of a bag are the main reason people can't find their sleep mask forty minutes into a flight when the cabin lights go down.
+A dedicated travel pouch earns its space here. Loose items rattling around the bottom of a bag are the main reason people can't find their sleep mask forty minutes into a flight when the cabin lights go down.
 
 For the flight itself, our guide on [how to sleep on a plane in economy](/guides/how-to-sleep-on-a-plane-economy) goes deeper on positioning, timing and what actually helps you nod off in a middle seat. And if you're building a fuller kit for a long-haul trip rather than a domestic hop, the [long-haul flight comfort kit guide](/guides/long-haul-flight-comfort-kit) covers what changes once you're in the air for eight-plus hours.
 
@@ -165,7 +159,7 @@ Cabin temperature swings more than most people expect, often 10 or more degrees 
 
 Bamboo crew socks give you a breathable layer that doesn't trap heat during boarding, then keeps feet warm once the aircraft cools down at altitude. They pack flat, take up almost no room in a pouch, and don't add noticeable weight against a strict 7kg allowance. See our full breakdown on the [best socks for flying](/guides/best-socks-for-flying) if you want the specifics on fabric and fit.
 
-If you're short on carry-on weight, [bamboo ankle socks](/products/bamboo-ankle-socks) or [bamboo crew socks](/products/bamboo-crew-socks) both weigh next to nothing, so there's rarely a reason to leave them behind.
+If you're short on carry-on weight, [bamboo ankle socks](/products/ankle-hugger/) or [bamboo crew socks](/products/crew-sock/) both weigh next to nothing, so there's rarely a reason to leave them behind.
 
 ## Frequently asked questions
 

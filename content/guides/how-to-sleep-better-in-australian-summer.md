@@ -6,7 +6,7 @@ meta_description: How to sleep better in Australian summer, backed by sleep scie
 primary_keyword: how to sleep better in Australian summer
 secondary_keywords: [ideal bedroom temperature for sleep Australia, how to sleep in a heatwave, cooling sleep tips Australia, why can't I sleep when it's hot, best sleepwear for hot nights]
 cluster: C - sleep
-internal_links: [/guides/why-your-feet-are-cold-in-bed, /guides/do-sleep-masks-actually-improve-sleep, /guides/what-to-look-for-in-a-sleep-mask, /guides/15-minute-wind-down-routine, /guides/are-bamboo-socks-better-than-cotton]
+internal_links: ["/guides/why-bamboo-feels-cooler-warmer", "/guides/why-your-feet-are-cold-in-bed", "/guides/what-to-look-for-in-a-sleep-mask", "/guides/do-sleep-masks-actually-improve-sleep", "/guides/15-minute-wind-down-routine"]
 hero_image:
   filename: assets/bedroom-cool-linen-GENERATION-PROMPT.jpg
   alt: Cool, softly lit bedroom with linen bedding and a bamboo-accented sleep mask on the pillow
@@ -162,8 +162,6 @@ If you're building a proper wind-down routine to pair with a cooler bedroom, our
 ## A note on bamboo and hot nights
 
 None of this is about buying your way into better sleep. Airflow, room temperature and timing matter more than any single product.
-
-But if you're already choosing sleepwear, socks or a sleep mask, breathable natural fibres are the sensible choice for summer over anything synthetic that traps heat. That's the whole idea behind the [PandaBare Comfort Kit](/comfort-kit): breathable bamboo essentials, including a sleep mask and socks, put together for exactly this kind of night. If you want to understand the fibre itself before you buy anything, [are bamboo socks better than cotton](/guides/are-bamboo-socks-better-than-cotton) is a good starting point.
 
 ## FAQ
 

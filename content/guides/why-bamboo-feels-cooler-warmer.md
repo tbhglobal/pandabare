@@ -11,11 +11,7 @@ secondary_keywords:
   - does bamboo keep your feet cool
   - bamboo vs cotton breathability
 cluster: A - bamboo material
-internal_links:
-  - /guides/are-bamboo-socks-better-than-cotton
-  - /guides/how-bamboo-fabric-is-made
-  - /guides/best-socks-for-sweaty-feet
-  - /guides/best-bed-socks-for-cold-feet
+internal_links: ["/guides/best-bed-socks-for-cold-feet", "/guides/how-to-sleep-better-in-australian-summer", "/guides/are-bamboo-socks-better-than-cotton", "/guides/why-your-feet-smell", "/products/crew-sock/", "/products/ankle-hugger/", "/guides/how-bamboo-fabric-is-made"]
 hero_image:
   filename: assets/hero-socks-wristband.jpg
   alt: Bamboo crew socks and sport wristband styled together, showing the breathable knit used year round
@@ -158,7 +154,7 @@ A fibre that clears moisture quickly matters in both directions:
 
 If you are deciding between fabric options more broadly, our comparison of [bamboo socks against cotton](/guides/are-bamboo-socks-better-than-cotton) goes into fit, durability, and price as well as comfort. And if odour rather than temperature is your main concern, that is a related but separate mechanism, covered in [why your feet smell](/guides/why-your-feet-smell).
 
-Our [bamboo crew socks](/products/bamboo-crew-socks) and [ankle socks](/products/bamboo-ankle-socks) are built around this exact structure: a knit fine enough to stay breathable in the heat, and dense enough to hold a bit of warmth when the temperature drops.
+Our [bamboo crew socks](/products/crew-sock/) and [ankle socks](/products/ankle-hugger/) are built around this exact structure: a knit fine enough to stay breathable in the heat, and dense enough to hold a bit of warmth when the temperature drops.
 
 ## What determines whether bamboo fabric is made well in the first place
 
@@ -188,5 +184,3 @@ It is genuinely different, not just marketing, but the gap is smaller than most 
 Yes. The same breathable, moisture-moving structure that suits hot, dry summers also works well in mild-to-cold Australian winters, especially layered or worn as bed socks. It is a genuinely three-season fabric rather than a strictly summer one.
 
 ---
-
-*Looking for a low-effort way to try the full range. The [PandaBare Comfort Kit](/comfort-kit) pairs bamboo socks with a sleep mask and travel pouch, built for the same slower, more comfortable way of living this fabric is made for.*

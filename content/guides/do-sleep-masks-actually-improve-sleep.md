@@ -6,7 +6,7 @@ meta_description: Do sleep masks actually improve sleep? Here's what real studie
 primary_keyword: do sleep masks actually improve sleep
 secondary_keywords: [sleep mask benefits research, do eye masks help you sleep, sleep mask studies evidence, do blackout masks work, sleep mask ICU study]
 cluster: C - sleep
-internal_links: [/guides/what-to-look-for-in-a-sleep-mask, /guides/how-to-sleep-better-in-australian-summer, /guides/15-minute-wind-down-routine, /guides/why-your-feet-are-cold-in-bed]
+internal_links: ["/guides/how-to-sleep-on-a-plane-economy", "/guides/15-minute-wind-down-routine", "/guides/why-bamboo-feels-cooler-warmer", "/guides/what-to-look-for-in-a-sleep-mask", "/guides/how-to-sleep-better-in-australian-summer"]
 hero_image:
   filename: GENERATION PROMPT (not yet generated): a linen-covered bed in soft natural morning light, a plain bamboo-trimmed sleep mask resting on a pillow beside a folded throw, warm off-white and oatmeal tones, no people, no cartoon pandas, no visible logos or fake product rendering, shallow depth of field, calm and unstyled, shot like a quiet editorial photo
   alt: A soft sleep mask resting on a linen pillow in natural morning light
@@ -164,8 +164,6 @@ Given what the studies tested, the practical takeaways are simple.
 If you're building this into a broader wind-down setup, our guide on [what to look for in a sleep mask](/guides/what-to-look-for-in-a-sleep-mask) goes deeper on fit and fabric choice. For Australian summers specifically, when early sunrises and warm nights both work against good sleep, see [how to sleep better in Australian summer](/guides/how-to-sleep-better-in-australian-summer).
 
 A sleep mask by itself won't undo a bad routine or a genuinely disrupted circadian rhythm. But the research on light-blocking specifically, across a hospital ward and a university sleep lab, lands in the same place: less light reaching your eyes at night is consistently linked to better reported sleep and, in at least one solid study, measurably better next-day function. That's a modest, well-evidenced claim, not a sweeping one, and it's the one we'd stand behind.
-
-The PandaBare sleep mask is designed around that same brief: block light properly, sit comfortably, and use a fabric that doesn't overheat. It's part of the [PandaBare Comfort Kit](/comfort-kit), alongside the travel pouch and bamboo socks, for anyone building a proper wind-down or travel sleep setup. You can also find it on its own at [/products/sleep-mask](/products/sleep-mask).
 
 ## FAQ
 

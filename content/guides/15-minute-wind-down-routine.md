@@ -11,11 +11,7 @@ secondary_keywords:
   - screen time before bed sleep
   - can't switch off at night
 cluster: C - sleep
-internal_links:
-  - /guides/do-sleep-masks-actually-improve-sleep
-  - /guides/how-to-sleep-better-in-australian-summer
-  - /guides/what-to-look-for-in-a-sleep-mask
-  - /guides/best-bed-socks-for-cold-feet
+internal_links: ["/guides/why-your-feet-are-cold-in-bed", "/guides/best-bed-socks-for-cold-feet", "/guides/do-sleep-masks-actually-improve-sleep", "/guides/what-to-look-for-in-a-sleep-mask", "/guides/how-to-sleep-better-in-australian-summer"]
 hero_image:
   filename: assets/lifestyle-coffee.jpg
   alt: "Cosy evening scene with bamboo socks and a warm drink, slow-living wind-down mood"
@@ -127,8 +123,6 @@ Most wind-down advice assumes you have an hour to spare for a bath, candles and 
 | 11 to 14 | Get into bed, put on a sleep mask, socks on if your feet run cold | Fixed final cue: the same last action every night, signalling lights out |
 | 14 to 15 | No phone, eyes closed, let your mind wander without chasing any one thought | Gives your brain permission to drift rather than problem-solve |
 
-[GENERATION PROMPT (not yet generated): soft, tactile, premium style photo of a calm bedroom scene set up for a wind-down routine, dim warm lamp light, linen bedding in off-white tones, a book resting on a nightstand, bamboo texture as a small accent detail only, natural light, no cartoon pandas, no fake-looking product renders, no AI or tool branding visible in the frame]
-
 ## How do you build a wind-down cue your brain recognises?
 
 This is the part most routines skip. A wind-down routine only works well if it's repeated, because repetition is what turns a set of actions into a cue. The [Sleep Health Foundation](https://www.sleephealthfoundation.org.au/sleep-topics/sleep-hygiene-good-sleep-habits) points out that your internal clock and sleep hormones work best with a regular routine, and that following the same steps each night, like changing into pyjamas or brushing your teeth, reinforces to your brain that it's bedtime.
@@ -136,8 +130,6 @@ This is the part most routines skip. A wind-down routine only works well if it's
 The mechanism is straightforward: if you do the same three or four things every single night before sleep, your brain starts to expect sleep once it recognises the pattern. It's the same principle as a toddler's bedtime routine, just for adults who'd rather not admit they need one.
 
 Pick one small, fixed final action and don't change it. For a lot of people that's putting on a sleep mask to block light and signal "we're done for the day." For others it's pulling on a pair of bed socks because cold feet are the last thing keeping them awake. Whatever you choose, the value is in doing the exact same thing, most nights, not in the object itself.
-
-[GENERATION PROMPT (not yet generated): soft, tactile, premium style photo of a sleep mask and a pair of bamboo socks laid out neatly on a linen quilt, ready for bed, warm off-white tones, natural window light, calm minimal styling, no cartoon pandas, no fake-looking product renders, no AI or tool branding visible in the frame]
 
 ## Does screen time before bed really matter?
 
@@ -155,13 +147,11 @@ A wind-down routine won't turn a 45 minute sleep onset into 10 minutes overnight
 
 ## What if you're a shift worker or your schedule changes constantly?
 
-The routine matters more, not less, when your schedule is irregular. Daylight, traffic noise and a body clock expecting to be awake all work against you. A [sleep mask](/products/sleep-mask) blocks the light cue your brain would otherwise use to stay alert, which is particularly useful if you're trying to sleep at 10am after a night shift.
+The routine matters more, not less, when your schedule is irregular. Daylight, traffic noise and a body clock expecting to be awake all work against you. A sleep mask blocks the light cue your brain would otherwise use to stay alert, which is particularly useful if you're trying to sleep at 10am after a night shift.
 
 The fix is the same 15 minute structure, just triggered by "about to sleep" rather than "it's night time." Keep the steps identical regardless of the clock: same lighting change, same final cue, same order. Your brain doesn't read a clock, it reads patterns.
 
-## Bringing it together with a simple kit
-
-You don't need a drawer full of gadgets for this. A mask that actually blocks light, socks that keep your feet from being the thing that wakes you at midnight, and a fixed place to put your phone are most of what a wind-down routine needs. If you're setting this up from scratch, or want it sorted for a share house, a share bed or a travel bag, the [PandaBare Comfort Kit](/comfort-kit) bundles a sleep mask, socks and a travel pouch so the whole routine lives in one spot by the bed, not scattered across three drawers.
+## Further reading on cold feet and bedtime routines
 
 If cold feet are part of why you can't drop off, it's worth reading about [why your feet are cold in bed](/guides/why-your-feet-are-cold-in-bed) and pairing that with our guide on [the best bed socks for cold feet](/guides/best-bed-socks-for-cold-feet). And if you're wondering whether a mask is worth adding at all, we've looked at [whether sleep masks actually improve sleep](/guides/do-sleep-masks-actually-improve-sleep) and [what to look for in a sleep mask](/guides/what-to-look-for-in-a-sleep-mask) before you buy one.
 
