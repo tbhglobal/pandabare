@@ -1,47 +1,12 @@
-import Announce from "@/components/Announce";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import PageHero from "@/components/PageHero";
-import ProductDetail from "@/components/ProductDetail";
-import ProductCard from "@/components/ProductCard";
-import { products } from "@/lib/products";
-import { notFound } from "next/navigation";
-
-export function generateStaticParams() {
-  return Object.keys(products).filter((s) => s !== "wristy" && s !== "ankle-hugger" && s !== "crew-sock").map((slug) => ({ slug }));
-}
-
-export const dynamicParams = false;
-
-export function generateMetadata({ params }) {
-  const p = products[params.slug];
-  if (!p) return { title: "Not found | PandaBare" };
-  return { title: `${p.name} | PandaBare` };
-}
-
-export default function ProductPage({ params }) {
-  const p = products[params.slug];
-  if (!p) notFound();
-  const others = Object.entries(products).filter(([s]) => s !== params.slug).slice(0, 3);
-  return (
-    <>
-      <Announce />
-      <Header />
-      <main>
-        <PageHero eyebrow="Bamboo comfort essentials" title={p.name} copy={p.blurb} img="/images/hero.jpg" alt="PandaBare bamboo socks and wristband in bamboo leaves" />
-        <ProductDetail product={p} />
-        <section style={{ padding: "0 0 96px", background: "var(--cream)" }}>
-          <div className="wrap">
-            <h2 style={{ fontFamily: "var(--font-serif), serif", fontWeight: 500, fontSize: 28, marginBottom: 28 }}>You might also like</h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 20 }} data-mom-grid>
-              {others.map(([slug, o]) => (
-                <ProductCard key={slug} href={`/products/${slug}/`} img={o.img} name={o.name} price={o.price} />
-              ))}
-            </div>
-          </div>
-        </section>
-      </main>
-      <Footer />
-    </>
-  );
-}
+import Announce from '@/components/Announce';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import PageHero from '@/components/PageHero';
+import { pageMetadata } from '@/lib/seo.mjs';
+import { ShopCollection, DeliveryNote } from '@/components/StorefrontHome';
+import BasketIdeas from '@/components/BasketIdeas';
+import { notFound } from 'next/navigation';
+export function generateStaticParams(){return [{slug:'sock-bundle'}];}
+export const dynamicParams=false;
+export function generateMetadata({params}){if(params.slug!=='sock-bundle')return {};return pageMetadata({title:'Choose Your Socks: Basket Ideas | PandaBare',description:'Choose individually priced PandaBare socks and compare basket totals. Select products, colours and available sizes on the product pages. No bundle discount applies.',path:'/products/sock-bundle/'});}
+export default function ChooseSocks({params}){if(params.slug!=='sock-bundle')notFound();return <><a className="pb-skip-link" href="#main-content">Skip to content</a><Announce/><Header/><main id="main-content"><PageHero eyebrow="Choose your socks" title="Your colours. Your combination." copy="Mix the products you want at their individual prices. Start with an idea below, then choose colour and fit on each product page. These are shopping ideas, with no bundle discount or special packaging included." img="/images/products/bundle.jpg" alt="PandaBare socks"/><BasketIdeas/><ShopCollection/><DeliveryNote/></main><Footer/></>;}

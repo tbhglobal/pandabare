@@ -4,8 +4,8 @@ const nextConfig = {
   async redirects() {
     return [
       // Retired product page that Google still has indexed
-      { source: "/comfort-kit", destination: "/", permanent: true },
-      { source: "/comfort-kit/", destination: "/", permanent: true },
+      { source: "/comfort-kit", destination: "/gift-packs/", permanent: true },
+      { source: "/comfort-kit/", destination: "/gift-packs/", permanent: true },
     ];
   },
 };
