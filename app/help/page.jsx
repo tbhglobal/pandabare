@@ -11,9 +11,9 @@ const p = { fontSize: 16.5, lineHeight: 1.75, color: "#2a2a28", marginBottom: 14
 const block = { padding: "44px 0", borderTop: "1px solid rgba(26,26,26,.1)", scrollMarginTop: 90 };
 
 const faqs = [
-  ["What are PandaBare socks made from?", "Soft, breathable bamboo fibre. Check each product page for the full fabric details."],
+  ["Where can I confirm the fabric composition?", "For the full fibre percentages of a specific product or batch, email orders@pandabare.me before ordering. Please include the product name and colour."],
   ["What size are the crew socks?", "One size fits most: roughly AU men's 6 to 12 and women's 7 to 13."],
-  ["Do the Wristies fit everyone?", "They're one size with plenty of stretch, so they suit most wrists."],
+  ["How can I check Wristy fit?", "If you need measurements or help checking fit, email orders@pandabare.me before ordering. Please include your wrist measurement and the product you are considering."],
   ["Where do you ship?", "Australia wide."],
   ["How do I track my order?", "You'll get an order confirmation by email. If you need an update, email orders@pandabare.me with your order number."],
   ["Can I change or cancel my order?", "Email orders@pandabare.me as soon as possible and we'll do our best before it ships."],
@@ -22,9 +22,10 @@ const faqs = [
 export default function HelpPage() {
   return (
     <>
+      <a className="pb-skip-link" href="#main-content">Skip to content</a>
       <Announce />
       <Header />
-      <main style={{ background: "var(--cream)" }}>
+      <main id="main-content" style={{ background: "var(--cream)" }}>
         <section style={{ padding: "72px 0 24px" }}>
           <div className="wrap" style={{ maxWidth: 760 }}>
             <span className="eyebrow">Help</span>
@@ -32,7 +33,7 @@ export default function HelpPage() {
             <p style={{ fontSize: 18, color: "var(--ink-soft)", fontWeight: 300 }}>
               Everything you need to know. Can&apos;t find it? Email <a href="mailto:orders@pandabare.me" style={{ color: "var(--forest)", textDecoration: "underline" }}>orders@pandabare.me</a>.
             </p>
-            <nav style={{ display: "flex", flexWrap: "wrap", gap: 10, marginTop: 26 }}>
+            <nav aria-label="Help topics" style={{ display: "flex", flexWrap: "wrap", gap: 10, marginTop: 26 }}>
               {[["Shipping", "shipping"], ["Returns", "returns"], ["Care", "care"], ["FAQs", "faq"]].map(([l, id]) => (
                 <a key={id} href={`#${id}`} style={{ fontSize: 13, fontWeight: 500, padding: "8px 16px", border: "1px solid rgba(26,26,26,.2)", borderRadius: 40 }}>{l}</a>
               ))}
