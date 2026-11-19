@@ -1,39 +1,8 @@
-"use client";
-import Image from "next/image";
-import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
-import Reveal from "./Reveal";
-
-const proofs = ["Ultra soft feel", "Breathable fibre", "Moisture wicking", "Lower impact materials"];
-
-export default function Material() {
-  const ref = useRef(null);
-  const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end start"] });
-  const y = useTransform(scrollYProgress, [0, 1], ["-10%", "10%"]);
-  return (
-    <section id="why" ref={ref} style={{ background: "var(--forest)", color: "var(--cream)", overflow: "hidden" }}>
-      <div className="wrap" style={{ display: "grid", gridTemplateColumns: "1.05fr .95fr", padding: 0 }} data-mat-grid>
-        <div style={{ padding: "88px 64px 88px 36px" }}>
-          <Reveal>
-            <h2 style={{ fontFamily: "var(--font-serif), serif", fontWeight: 500, fontSize: "clamp(28px,3.2vw,40px)", marginBottom: 18 }}>
-              Maximum comfort.<br />Minimum impact.
-            </h2>
-            <p style={{ color: "rgba(246,243,238,.75)", fontWeight: 300, maxWidth: "44ch", marginBottom: 44 }}>
-              We choose bamboo for its incredible softness and natural performance, and for the planet.
-            </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: 20 }} data-proofs>
-              {proofs.map((p) => (
-                <div key={p} style={{ fontSize: 12, lineHeight: 1.45, color: "rgba(246,243,238,.85)", borderTop: "1px solid rgba(246,243,238,.25)", paddingTop: 14 }}>{p}</div>
-              ))}
-            </div>
-          </Reveal>
-        </div>
-        <div style={{ position: "relative", minHeight: 440, overflow: "hidden" }}>
-          <motion.div style={{ y, position: "absolute", inset: "-12% 0" }}>
-            <Image src="/images/bamboo-texture.jpg" alt="Bamboo leaves in warm light" fill sizes="48vw" style={{ objectFit: "cover" }} />
-          </motion.div>
-        </div>
-      </div>
-    </section>
-  );
-}
+import Image from 'next/image';
+const steps = [
+  ['Choose your cut', 'Compare low-cut ankle socks with crew-length socks, or explore Wristy wristbands for your kit.', '/socks/', 'Browse the current range'],
+  ['Check the details', 'Confirm colour, available size and any fit or fabric detail you need before ordering.', '/help/#faq', 'Find product help'],
+  ['Plan your basket', 'See individually priced combinations and Australian delivery totals before choosing your products.', '/socks/#basket-ideas', 'See basket ideas'],
+  ['Care for your purchase', 'Read the current care information and follow the care label supplied with your product.', '/help/#care', 'Read the care guide'],
+];
+export default function Material(){return <section className="pb-about-details" id="why" style={{background:'var(--forest)',color:'var(--cream)'}}><style>{`.pb-about-details a:focus-visible{outline-color:var(--cream)}`}</style><div className="wrap" style={{display:'grid',gridTemplateColumns:'1.05fr .95fr',padding:0}} data-mat-grid><div style={{padding:'64px 36px'}}><h2 style={{fontFamily:'var(--font-serif), serif',fontWeight:500,fontSize:'clamp(28px,3.2vw,40px)',lineHeight:1.2,marginBottom:22}}>A few details make choosing easier.</h2><div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:28}} data-proofs>{steps.map(([title,copy,href,label])=><div key={title}><h3 style={{fontSize:16,marginBottom:8}}>{title}</h3><p style={{fontSize:14,marginBottom:12}}>{copy}</p><a href={href} style={{fontSize:13,fontWeight:600,textDecoration:'underline',textUnderlineOffset:3}}>{label}</a></div>)}</div></div><div style={{position:'relative',minHeight:340}}><Image src="/images/products/card-crew.jpg" alt="PandaBare crew socks" fill sizes="(max-width:1000px) 100vw, 48vw" style={{objectFit:'cover'}}/></div></div></section>}
